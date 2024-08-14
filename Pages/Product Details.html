@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../SASS/Pages/Product Details.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.8.0/nouislider.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="../CSS/loading.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Product details MERCHANTS WEBSITE DESIGN TEMPLATE</title>
+</head>
+<body>
+  <div id="loading-screen">
+    <div class="loader">
+        <div class="shopping-cart">
+            <i class="cart-icon"></i>
+        </div>
+    </div>
+</div>
+<div id="content" style="display: none;">
+    <!--Header-->
+    <header>
+        <div class="top-header">
+            <div class="contact-us">
+                <p class="email">+966556754472 <i class="fa-solid fa-phone"></i></p>
+                <p class="header-title">|</p>
+                <p class="email">Support@salla.sa <i class="fa-solid fa-envelope"></i></p>
+            </div>
+            <div class="title">
+                <img src="../Images/Home Page/flag.png" width="13px" alt=""> <button onclick="translate()">العربية - رس</button>
+                <a class="header-title">|</a>
+                <a class="header-title">المفضلة</a>
+                <a class="header-title">|</a>
+                <a class="header-title">سياسة الإستبدال أو الاسترجاع</a>
+                <a class="header-title">|</a>
+                <a class="header-title">تواصل معنا</a>
+            </div>
+        </div>
+        <div class="bottom-header">
+            <div class="details">
+                <div class="cart-profile">
+                  <div class="cart"><div class=""><img src="../Images/Home Page/icons8-cart-48.png" alt="logo"></div><a href="../index.html" class="logo-title text-dark">متجـــــر<br>سلــــــة</a></div>
+                </div>
+                <div class="search"><i class="fa-solid fa-magnifying-glass"></i> <input type="text" placeholder="ابحث عما تريد" name="" id=""></div>
+                <div class="cart-profile">
+                    <div class="cart hide"><div class="icon"><i class="fa-regular fa-user"></i></div><p class="icon-title">مرحبا بك <br><span>تسجيل دخول <i class="fa-solid fa-chevron-up"></i></span></p></div>
+                    <div class="cart hide"><div class="icon"><i class="fa-solid fa-cart-shopping"></i><p>2</p></div><p class="icon-title"><a href="../Pages/Cart.html">سلــــــة المشتريات</a><br><span>رس 1,200</span></p></div>
+                </div>
+            </div>
+        </div>
+        <div class="titls">
+          <div class="dropdown">
+              <a class="header-title dropdown-toggle" href="#" role="button" id="dropdownMenuLink1" data-bs-toggle="dropdown" aria-expanded="false">
+                  كل المنتجات <i class="fa-solid fa-chevron-down"></i>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
+                  <li><a class="dropdown-item" href="#">منتج 1</a></li>
+                  <li><a class="dropdown-item" href="#">منتج 2</a></li>
+              </ul>
+          </div>
+          <div class="dropdown">
+              <a class="header-title dropdown-toggle" href="#" role="button" id="dropdownMenuLink2" data-bs-toggle="dropdown" aria-expanded="false">
+                  إلكترونيات <i class="fa-solid fa-chevron-down"></i>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink2">
+                  <li><a class="dropdown-item" href="#">إلكترونيات 1</a></li>
+                  <li><a class="dropdown-item" href="#">إلكترونيات 2</a></li>
+              </ul>
+          </div>
+          <div class="dropdown">
+              <a class="header-title dropdown-toggle" href="#" role="button" id="dropdownMenuLink3" data-bs-toggle="dropdown" aria-expanded="false">
+                  موبايلات <i class="fa-solid fa-chevron-down"></i>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink3">
+                  <li><a class="dropdown-item" href="#">موبايل 1</a></li>
+                  <li><a class="dropdown-item" href="#">موبايل 2</a></li>
+              </ul>
+          </div>
+          <div class="dropdown">
+              <a class="header-title dropdown-toggle" href="#" role="button" id="dropdownMenuLink4" data-bs-toggle="dropdown" aria-expanded="false">
+                  كاميرات مراقبة <i class="fa-solid fa-chevron-down"></i>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink4">
+                  <li><a class="dropdown-item" href="#">كاميرات مراقبة 1</a></li>
+                  <li><a class="dropdown-item" href="#">كاميرات مراقبة 2</a></li>
+              </ul>
+          </div>
+          <div class="dropdown">
+              <a class="header-title dropdown-toggle" href="#" role="button" id="dropdownMenuLink5" data-bs-toggle="dropdown" aria-expanded="false">
+                  سماعات رقمية <i class="fa-solid fa-chevron-down"></i>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink5">
+                  <li><a class="dropdown-item" href="#">سماعات رقمية 1</a></li>
+                  <li><a class="dropdown-item" href="#">سماعات رقمية 2</a></li>
+              </ul>
+          </div>
+          <div class="dropdown">
+              <a class="header-title dropdown-toggle" href="#" role="button" id="dropdownMenuLink6" data-bs-toggle="dropdown" aria-expanded="false">
+                  كاميرات رقمية <i class="fa-solid fa-chevron-down"></i>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink6">
+                  <li><a class="dropdown-item" href="#">كاميرات رقمية 1</a></li>
+                  <li><a class="dropdown-item" href="#">كاميرات رقمية 2</a></li>
+              </ul>
+          </div>
+          <div class="dropdown">
+              <a class="header-title dropdown-toggle" href="#" role="button" id="dropdownMenuLink7" data-bs-toggle="dropdown" aria-expanded="false">
+                  أكسسوارات <i class="fa-solid fa-chevron-down"></i>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink7">
+                  <li><a class="dropdown-item" href="#">أكسسوارات 1</a></li>
+                  <li><a class="dropdown-item" href="#">أكسسوارات 2</a></li>
+              </ul>
+          </div>
+          <div class="dropdown">
+              <a class="header-title dropdown-toggle" href="#" role="button" id="dropdownMenuLink8" data-bs-toggle="dropdown" aria-expanded="false">
+                  شاشات كمبيوتر <i class="fa-solid fa-chevron-down"></i>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink8">
+                  <li><a class="dropdown-item" href="#">شاشات كمبيوتر 1</a></li>
+                  <li><a class="dropdown-item" href="#">شاشات كمبيوتر 2</a></li>
+              </ul>
+          </div>
+          <div class="dropdown">
+              <a class="header-title dropdown-toggle" href="#" role="button" id="dropdownMenuLink9" data-bs-toggle="dropdown" aria-expanded="false">
+                  إلكترونيات <i class="fa-solid fa-chevron-down"></i>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink9">
+                  <li><a class="dropdown-item" href="#">إلكترونيات 1</a></li>
+                  <li><a class="dropdown-item" href="#">إلكترونيات 2</a></li>
+              </ul>
+          </div>
+          <div class="dropdown">
+              <a class="header-title dropdown-toggle" href="#" role="button" id="dropdownMenuLink10" data-bs-toggle="dropdown" aria-expanded="false">
+                  سماعات <i class="fa-solid fa-chevron-down"></i>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink10">
+                  <li><a class="dropdown-item" href="#">سماعات 1</a></li>
+                  <li><a class="dropdown-item" href="#">سماعات 2</a></li>
+              </ul>
+          </div>
+      </div>
+    </header>
+    
+    <div class="container page-title"><p style="color: #62D0B6;font-weight: bold;margin: 1rem;text-align: right;">الرئيسية / <span style="color: #666666;">تفاصيل المنتج</span></p></div>
+
+    <div class="main">
+        <div class="phone">
+            <div class="image">
+                <aside>
+                    <div class="small-imgs"><img src="https://s3-alpha-sig.figma.com/img/4627/aeab/113f8ab8549ba99e5bcd59ecebee70c2?Expires=1724630400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=mHUErp0bcGHD3b6FXXO6RVIW7MwB2urM4hZh6T5JTqCgkdX3eCnnSv3sntTfZqkef-rrbxd7R8HsK-oNee0gjG3FXRxtO3d1simjwfEtEiRB8KPVHdBNGv-0~00nlo4Y31tPOoUKlcyAJqNTqZ-xbhHq~ryUYoOWrqdBQHs~XOWMxcyw9bqRT2hx3ETbuSCRcMLxHHxj9B77iF5pb-WWJ8dY7SsAOVQIgEuUMH0u8lnpzbxk7k2oKV9ithY~lu4cb53PXr7kF6HLgrVkaqA5cPF2a9~S2ORepWSM-~UHm0V-rCdzia9t3~i64ulMUuJD-qOmf~NuUCRVnxod55rfzQ__" class="w-100" alt=""></div>
+                    <div class="small-imgs"><img src="https://s3-alpha-sig.figma.com/img/4627/aeab/113f8ab8549ba99e5bcd59ecebee70c2?Expires=1724630400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=mHUErp0bcGHD3b6FXXO6RVIW7MwB2urM4hZh6T5JTqCgkdX3eCnnSv3sntTfZqkef-rrbxd7R8HsK-oNee0gjG3FXRxtO3d1simjwfEtEiRB8KPVHdBNGv-0~00nlo4Y31tPOoUKlcyAJqNTqZ-xbhHq~ryUYoOWrqdBQHs~XOWMxcyw9bqRT2hx3ETbuSCRcMLxHHxj9B77iF5pb-WWJ8dY7SsAOVQIgEuUMH0u8lnpzbxk7k2oKV9ithY~lu4cb53PXr7kF6HLgrVkaqA5cPF2a9~S2ORepWSM-~UHm0V-rCdzia9t3~i64ulMUuJD-qOmf~NuUCRVnxod55rfzQ__" class="w-100" alt=""></div>
+                    <div class="small-imgs active-image"><img src="https://s3-alpha-sig.figma.com/img/4627/aeab/113f8ab8549ba99e5bcd59ecebee70c2?Expires=1724630400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=mHUErp0bcGHD3b6FXXO6RVIW7MwB2urM4hZh6T5JTqCgkdX3eCnnSv3sntTfZqkef-rrbxd7R8HsK-oNee0gjG3FXRxtO3d1simjwfEtEiRB8KPVHdBNGv-0~00nlo4Y31tPOoUKlcyAJqNTqZ-xbhHq~ryUYoOWrqdBQHs~XOWMxcyw9bqRT2hx3ETbuSCRcMLxHHxj9B77iF5pb-WWJ8dY7SsAOVQIgEuUMH0u8lnpzbxk7k2oKV9ithY~lu4cb53PXr7kF6HLgrVkaqA5cPF2a9~S2ORepWSM-~UHm0V-rCdzia9t3~i64ulMUuJD-qOmf~NuUCRVnxod55rfzQ__" class="w-100" alt=""></div>
+                    <div class="small-imgs"><img src="https://s3-alpha-sig.figma.com/img/4627/aeab/113f8ab8549ba99e5bcd59ecebee70c2?Expires=1724630400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=mHUErp0bcGHD3b6FXXO6RVIW7MwB2urM4hZh6T5JTqCgkdX3eCnnSv3sntTfZqkef-rrbxd7R8HsK-oNee0gjG3FXRxtO3d1simjwfEtEiRB8KPVHdBNGv-0~00nlo4Y31tPOoUKlcyAJqNTqZ-xbhHq~ryUYoOWrqdBQHs~XOWMxcyw9bqRT2hx3ETbuSCRcMLxHHxj9B77iF5pb-WWJ8dY7SsAOVQIgEuUMH0u8lnpzbxk7k2oKV9ithY~lu4cb53PXr7kF6HLgrVkaqA5cPF2a9~S2ORepWSM-~UHm0V-rCdzia9t3~i64ulMUuJD-qOmf~NuUCRVnxod55rfzQ__" class="w-100" alt=""></div>
+                    <div class="small-imgs"><img src="https://s3-alpha-sig.figma.com/img/4627/aeab/113f8ab8549ba99e5bcd59ecebee70c2?Expires=1724630400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=mHUErp0bcGHD3b6FXXO6RVIW7MwB2urM4hZh6T5JTqCgkdX3eCnnSv3sntTfZqkef-rrbxd7R8HsK-oNee0gjG3FXRxtO3d1simjwfEtEiRB8KPVHdBNGv-0~00nlo4Y31tPOoUKlcyAJqNTqZ-xbhHq~ryUYoOWrqdBQHs~XOWMxcyw9bqRT2hx3ETbuSCRcMLxHHxj9B77iF5pb-WWJ8dY7SsAOVQIgEuUMH0u8lnpzbxk7k2oKV9ithY~lu4cb53PXr7kF6HLgrVkaqA5cPF2a9~S2ORepWSM-~UHm0V-rCdzia9t3~i64ulMUuJD-qOmf~NuUCRVnxod55rfzQ__" class="w-100" alt=""></div>
+                </aside>
+                <aside class="main-img"><img src="https://s3-alpha-sig.figma.com/img/4627/aeab/113f8ab8549ba99e5bcd59ecebee70c2?Expires=1724630400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=mHUErp0bcGHD3b6FXXO6RVIW7MwB2urM4hZh6T5JTqCgkdX3eCnnSv3sntTfZqkef-rrbxd7R8HsK-oNee0gjG3FXRxtO3d1simjwfEtEiRB8KPVHdBNGv-0~00nlo4Y31tPOoUKlcyAJqNTqZ-xbhHq~ryUYoOWrqdBQHs~XOWMxcyw9bqRT2hx3ETbuSCRcMLxHHxj9B77iF5pb-WWJ8dY7SsAOVQIgEuUMH0u8lnpzbxk7k2oKV9ithY~lu4cb53PXr7kF6HLgrVkaqA5cPF2a9~S2ORepWSM-~UHm0V-rCdzia9t3~i64ulMUuJD-qOmf~NuUCRVnxod55rfzQ__" class="w-100" alt=""></aside>
+            </div>
+            <div class="content-container">
+                <div class="logo"><img src="https://s3-alpha-sig.figma.com/img/d48c/1e60/b9b9040260a2244cfba3354e1c1ef368?Expires=1724630400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=GuwblHg12snjGqZM9k~Iy-v6-0zZ2oejUIAHKqEec90NLzj0rCTrciK7oqhb0K9V~v-NsKexCjV4NFiEG3ZC59E83oQfnDnfXHXCDZkgnyM719oehtd6bz-3A0GeR4LaRet3GJlCCtSE4DokOe~0Vo0fA7wAidBStSRL0Zmxe6X6RTsNqwlCaaMmq0XXOfXFu7535G2I37QVapLKf9G00PbG9--xbdwr0-OQ4csiI6Hld4I0rdhG7G40MVtIzXfIfwtlBbdz4yQKRAk~hGza1pwBFp8Wz7i7viXnnpnbBzr1inS8MbDYCszrsqyfd2jMZ6TuNVxYuJuaANoQ1slilA__" class="w-100" alt=""></div>
+                <div class="text">
+                    <div class="title"><p>موبايل  آبل آيفون بشريحتين و 64 جيجا بالإضافة الى كاميرتين ذات جودة عالية</p></div>
+                    <div class="icons"><p><i class="fa-solid fa-box"></i> المتبقى <span>16</span> وحدة</p><p style="border: none;"><i class="fa-solid fa-fire-flame-curved text-danger"></i> تم شراءه <span>250</span> مرة</p></div>
+                    <div class="icons"><div class="rating"><i class="fa-solid fa-star active-star"></i><i class="fa-solid fa-star active-star"></i><i class="fa-solid fa-star active-star"></i><i class="fa-solid fa-star active-star"></i><i class="fa-solid fa-star"></i> <p>(10) تقييمات</p></div><div class="save-product"><button href="#" class="btn save"><i class="fa-regular fa-heart"></i></button> <p>أضف للمفضلة</p></div><div class="share"><i class="fa-solid fa-share-nodes text-secondary"></i> <p>مشاركة المنتج</p></div></div>
+                    <div class="description"><p>موبايل ابل ايفون 11 بشريحتين لاتصال وذاكرة داخلية 64 جيجا ويدعم تقنية شبكة الجيل الرابع ال تي اي مع تطبيق فيس تايم، بنفسجي، النسخة العالمية<br><span>عرض المزيد</span></p></div>
+                    <div class="categ"><p>إلكترونيات</p><p>موبايلات</p><p>آيفون</p><p>تخفيضات</p><p style="border: none;">إلكترونيات</p></div>
+                </div>
+                <div class="list-container">
+                    <div class="info"><div><i class="fa-regular fa-pen-to-square"></i> تخصيص المنتج</div><div class="icon"><i class="fa-solid fa-plus"></i></div></div>
+                    <div class="info"><div><i class="fa-solid fa-store"></i> التوفر في المعارض</div><div class="icon"><i class="fa-solid fa-plus"></i></div></div>
+                    <div class="info"><div><i class="fa-solid fa-weight-scale"></i>وزن المنتج</div><div class="icon">0.45 أوقية</div></div>
+                    <div class="info"><div><i class="fa-solid fa-border-none"></i> جدول القياسات</div><div class="icon"><i class="fa-solid fa-plus"></i></div></div>
+                    <div class="info"><div><i class="fa-solid fa-hand-holding-heart"></i> أهدي من تحب <br><span>يمكن الان ارسال الهدايا لمن تحب عن طريق منصتنا وفي الوقت الذي تحبه! </span></div><div class="icon"><button>أرسل كهدية </button></div></div>
+                    <div class="info"><div>احصل عليه الان قبل الجميع<br><span>يمكن الان ارسال الهدايا لمن تحب عن طريق منصتنا وفي الوقت الذي تحبه! </span></div><div class="icon"><button>أرسل كهدية </button></div></div>
+                    <div class="number">
+                        <div class="price"><div class="num"><p style="margin: 1rem;">حدد الكمية </p><div><i class="fa-solid fa-plus"></i><i class="fa-solid fa-1"></i><i class="fa-solid fa-minus"></i></div></div><p>250.00 ر.س</p></div>
+                        <div class="buttons"><button class="btn"><i class="fa-solid fa-cart-shopping"></i> الشراء السريع</button><button class="btn border-btn"><i class="fa-solid fa-cart-shopping"></i>أضف للسلة</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Brands-->
+    <div class="brands-container container">
+        <div class="brand">
+            <svg class="" width="90" viewBox="0 0 141 56" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M122.239 16.873L113.948 48.5272L113.929 48.5989H120.386L128.707 16.873H122.239Z" fill="#292929"></path><path d="M19.643 34.8883C18.6747 35.3651 17.6091 35.6112 16.5297 35.6072C14.2043 35.6072 12.8847 35.2358 12.7413 33.3563V33.2297C12.7413 33.1551 12.7328 33.089 12.7328 33.0018V27.528L12.7413 26.8837V23.0248H12.7328V21.3831L12.7413 20.7332V17.008L6.97342 17.7691C10.8744 17.0136 13.1126 13.9272 13.1126 10.8505V8.95557H6.63157V17.8183L6.26581 17.921V34.334C6.47964 38.9455 9.5183 41.6859 14.504 41.6859C16.2667 41.6859 18.2066 41.285 19.6922 40.6111L19.726 40.597V34.8391L19.643 34.8883Z" fill="#292929"></path><path d="M20.6657 15.6799L2.47736 18.4837V23.0951L20.6657 20.2914V15.6799Z" fill="#292929"></path><path d="M20.6657 22.427L2.47736 25.2307V29.6368L20.6657 26.8317V22.427Z" fill="#292929"></path><path d="M41.0782 24.5485C40.8208 19.425 37.6189 16.3892 32.4026 16.3892C29.4033 16.3892 26.9316 17.5469 25.2533 19.7401C23.575 21.9333 22.6971 25.1394 22.6971 29.0362C22.6971 32.933 23.5806 36.1489 25.2533 38.3336C26.9259 40.5184 29.4033 41.6846 32.4026 41.6846C37.6189 41.6846 40.8208 38.6333 41.0782 33.483V41.2021H47.5495V16.9294L41.0782 17.9282V24.5485ZM41.4159 29.0418C41.4159 33.5801 39.0328 36.5119 35.3456 36.5119C31.5472 36.5119 29.2753 33.7194 29.2753 29.0418C29.2711 24.3375 31.5402 21.5239 35.3414 21.5239C37.1899 21.5239 38.7345 22.2442 39.8079 23.606C40.856 24.9368 41.4116 26.8149 41.4116 29.0376L41.4159 29.0418Z" fill="#292929"></path><path d="M66.4581 16.3905C61.2389 16.3905 58.0356 19.4277 57.7824 24.5569V9.86157L51.3013 10.8618V41.2034H57.7824V33.4815C58.0356 38.6388 61.2389 41.693 66.4581 41.693C72.5649 41.693 76.2113 36.9647 76.2113 29.0445C76.2113 21.1243 72.5649 16.3905 66.4581 16.3905ZM63.5151 36.5075C59.8265 36.5075 57.4448 33.5758 57.4448 29.0375C57.4448 26.8148 57.999 24.9367 59.0485 23.6031C60.1219 22.2413 61.6665 21.521 63.5151 21.521C67.3134 21.521 69.5854 24.3346 69.5854 29.0375C69.5854 33.7151 67.3162 36.5075 63.5151 36.5075Z" fill="#292929"></path><path d="M93.8595 16.3905C88.6403 16.3905 85.4385 19.4277 85.1838 24.5569V9.86157L78.7028 10.8618V41.2034H85.1838V33.4815C85.4385 38.6388 88.6403 41.693 93.8595 41.693C99.9663 41.693 103.613 36.9647 103.613 29.0445C103.613 21.1243 99.9663 16.3905 93.8595 16.3905ZM90.9165 36.5075C87.2293 36.5075 84.8462 33.5758 84.8462 29.0375C84.8462 26.8148 85.4005 24.9367 86.4499 23.6031C87.5233 22.2413 89.068 21.521 90.9165 21.521C94.7148 21.521 96.9868 24.3346 96.9868 29.0375C96.9868 33.7151 94.7176 36.5075 90.9165 36.5075Z" fill="#292929"></path><path d="M103.628 16.873H110.548L116.17 41.1584H109.966L103.628 16.873Z" fill="#292929"></path></svg>
+            <p>سنقسط الدفع لمشترياتك علي أربع أقساط بدون تكلفة <br><span>أعرف أكثر</span></p>
+        </div>
+        <div class="brand">
+            <img src="https://s3-alpha-sig.figma.com/img/3616/4304/fa72e581641128c912c4aaf12accf221?Expires=1724630400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=kwl10kgKv3XDY~6lUzbEl0tZI03pwBlxaHwTChsEXsSJXtRy13~3db263etRHGwTypPa6lF5pfboTva16Vxx69qam2vi~5EsQVJXrBtvGdpcwloSfwDWJNtJVDeanl4uAkl1YwsdYkYhRbrzgH1OweH9w1~wYI~~qvWw~ENzKi35IcWgISOQVgWKBrPC8giHVR1I4ITM6Db92cdyPVrcoxa1ozUwuI9c7pDDfHO7rJ-RKJmo7gMD1UsAF4Usygvg3BGG6pZzBXqJn72kjhyAUjQeIeb~Ug2yk3Sr~R0E1KZTsDt-KhZ5Ecx4JPO176pLJ1Ww2OCs8PRab6ycoFQZgg__" width="90px" alt="">
+            <p>سنقسط الدفع لمشترياتك علي أربع أقساط بدون تكلفة <br><span>أعرف أكثر</span></p>
+        </div>
+        <div class="brand">
+            <img src="https://s3-alpha-sig.figma.com/img/3968/7915/d4586f42581fab42ec58bdc55a3cc03c?Expires=1724630400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ltYGoE20zUQ1Y4PNAb6hlEOCKfgwYoriYfc0kvXtNONXv9JapDQ-FH4oqfD4Vk8xvtMQT5GNQ5KCq8aOMrrxnn2NbHHOqyjSvNDTSHblceiyn8-c9YD61WPFs--yh9fiaER62S99OZfkWPEdU3tN2ED~veE9LDMaacGbd8F4nrSKCoRrDbPkouGpP5xD3xGPSQXMNsqbWthJaFdWx6CazBxSK47bG-ihKdrk5J~4pKbgM2EnVq8ElI-B3Pe~BltSqNHLCG~UlfI4HCskP~BFzP5KZfSZI8pHZNdF8XtLNbuBG-ysiSZlYRIlEnbZl9JQmppsqgCvOOvCU8IjtR1dCA__" width="90px" alt="">
+            <p>سنقسط الدفع لمشترياتك علي أربع أقساط بدون تكلفة <br><span>أعرف أكثر</span></p>
+        </div>
+    </div>
+
+    <!--Information-->
+    <div class="information container">
+        <div class="top-header"><button class="active-button" onclick="activateContent(1)">تفاصيل المنتج</button><button onclick="activateContent(2)">تفاصيل المنتج</button><button onclick="activateContent(3)">تقييمات المنتج</button></div>
+        <div class="info-container">
+            <div class="info-1 active">
+                <p>لقد تم تصميم هاتف ابل ايفون الذكي بهيكل ملفت وجميل يجعلك تحب النظر إليه في كل الأوقات. تعمل شاشة ليكويد رتينا 6.1 انش على جذب انتباهك وكل حواسك على عكس أي هاتف ذكي آخر. إن تصميم الزجاج والألومنيوم يجعلها متينًة وتضفي على الهاتف مظهرًا مثيرًا للحواس.</p>
+                <div class="banners"><div class="banner banner1"></div><div class="banner banner2"></div></div>
+                <div class="moments">
+                    <p class="title">للحظات لا تنسى</p>
+                    <p>يتميز هاتف ابل الذكي بإعداد كاميرا مزدوجة تبلغ دقتها 12 ميجابكسل تتيح لك التقاط أجمل الصور بتفاصيل خلابة ورائعة. سواء كانت مناظر طبيعية أو لحظات ثمينة لا تريد نسيانها أو كائنات سريعة الحركة؛ يمكنك التقاط صور لكل ذلك في أفضل الحالات باستخدام إعدادات الكاميرا المتطورة. قم بتصوير مقاطع الفيديو مثل المحترفين وإنشاء نقطة مرجعية لاسترجاع اللحظات المهمة. لن تؤثر ظروف الإضاءة المنخفضة على جودة صورتك، حيث توفر الكاميرا العريضة بدقة 12 ميجابكسل تركيزًا تلقائيًا أسرع بثلاث مرات في الإضاءة المنخفضة. مع الوضع الليلي، ليست هناك حاجة للفلاش بعد الآن، حيث يلتقط هذا الإعداد الصور بلون طبيعي وسطوع لا مثيل له. أعط الشيء الذي تريد تصويره الأضواء والتركيز الذي يستحقه مع وضع الصور الشخصية. تستفيد خاصية اتش دي ار الذكية من التعلم الآلي للتعرف على الأشخاص ومعاملتهم بطريقة مختلفة عن بقية اللقطة، مما توفر ميزات رائعة وظلال ولون بشرة طبيعية. التقط صور سيلفي رائعة مع كاميرا ترو ديبث بدقة تبلغ 12 ميجابكسل. مع خاصية مثبت الصور البصري، لن يكون التقاط صور واضحة مشكلة بعد الآن.</p>
+                    <img src="https://s3-alpha-sig.figma.com/img/4bf0/1fd4/299e036532e3c4b6918bae25622bc4f4?Expires=1724630400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Ho3PlFhbvAuH2ks9X99DlkS-VGXKv5e2LQ5Tex6DMjZdlumLs9CcDybsf1WrWsgBBLTz0mFeZD6s4UTWSevtLqVHCF61AxMi9FoleSBmW5JxQOtUQ1Lk5zEMtk0x4EaTocFuVWCS9viL3h~KztbvaFaFgjXs-4T6VYwR98ORrUtYYtT9tAgsNQu1fMlyGWx442OoTGOpHNYjritz9JqhmUINsx1n5oAl~3mHRfYgSVGvnPER2jvizU6dYQahULTOwg-MMsLQUQn1Zu9FqG24onomLWTnC8Y3hSsXvzho1pdpov-oZo5~nAbtvX7Hp07s3bRzWo0uq6SQBToumMM7EA__" class="w-100" alt=""><br>
+                    <p>يضيف هاتف ايفون 11 الذكي سرعة فائقة إلى كل ما تفعله، من خلال شريحة ايه 12 بيونيك التي تتميز بمحرك عصبي. تساعد هذه الشريحة القوية على تسهيل أداء المهام الكثيفة للقيام بها بطريقة سلسة. سواء كانت تقوم بتصوير فيديو بدقة 4 كيه بسرعة 60 إطارًا في الثانية في نطاق ديناميكي ممتد أو إعادة إلقاء الضوء على الشخص في مقدمة الصورة؛ تستطيع هذه الشريحة فعل كل هذا بسرعة مثيرة للإعجاب. بالإضافة إلى ذلك،</p>
+                </div>
+                <div class="moments moments-2">
+                    <img src="https://s3-alpha-sig.figma.com/img/416c/be54/e028cbc65f6d75120c7f25ee0efffcc9?Expires=1724630400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=dEIF4TV0XSdf55sRbHt3ASiLbVN5MWGbzOjowxPqCm-~7PW6a7OhDMT10ib48UFr5GEd1aqiFHrxAQLwHbUbKYKnX8hmyZebAxi6gE4oNUy6Nn2iRjIrCFirQBUcwrqcVfcT6bm-UarCg4C6GFDEoNBoz9LY7Fuks~N-tMK7Va5LfSTNAk7cgQw~Crklg4NWj5vXc~7zM1nvEFph8XXRGwaQ5XXcoYli5ANUUM5hp9bx~PvqWftLUAFUZJ6Eie55xnIdVPoq7aGfxkrk1A3gCKFaOG2W7cyxmPXjZd-hk3vRt8vjWYWKm02HZQV9KADbAewkL4V87jUtu804WCJUeg__" alt="">
+                    <div style="width: 800px;">
+                        <p class="title">أداء سلس</p>
+                        <p>يتميز هذا الهاتف الذكي من ابل بشاشة ليكويد رتينا يبلغ حجمها 6.1 انش تعمل بتقنية اتش دي وتوفر صورًا واضحة ومفصلة لتوصيل متعة الترفيه إلى المستوى الجديد بالكامل. شاهد أفلامك المفضلة أو الأحداث الرياضية المثيرة أو تصفح محتويات مختلفة على الإنترنت واستمتع بها على أكمل وجه بفضل الدمج الاستثنائي بين تقنية ترو تون ودولبي اتموس. يوفر هاتف ابل ايفون 11 صوراً بأعلى جودة ويجعلها تنبض بالحياة بفضل الدقة التي تبلغ 1792 × 828 بكسل. تضمن الطبقة المضادة للزيوت ومقاومة لبصمات الأصابع عدم وجود علامات غير مرغوب فيها على الشاشة، حتى بعد الاستخدام المكثف. بالإضافة إلى ذلك، يحتوي هذا الهاتف الذكي على بطارية قوية تدوم طويلًا توفر ساعات من الترفيه غير المنقطع، مما يجعله شريك السفر المثالي.</p>
+                        <p> يحتوي هذا الهاتف من ايفون على ذاكرة وصول عشوائية تبلغ سعتها 4 جيجابايت تجعل من تعدد المهام أسرع من أي وقت مضى؛ كما أنها تحمّل ألعاب الرسومية ذات المساحات الكبيرة وتطبيقات تحرير الفيديو بسرعة. يمكنك تخزين المزيد من محتويات الترفيه دون حذف أي من بياناتك أو صورك المخزنة سابقاً، وذلك بفضل سعة الذاكرة المدمجة التي يوفرها هذا الهاتف الذكي بسعة 128 جيجابايت. يتميز هاتف ابل ايفون 11 بنظام التشغيل اي او اس 13 الذي يجعل استخدامه فرحة لا مثيل لها. يضيف هذا النظام للتشغيل لمسة من الإثارة بميزات مثل الوضع المظلم على نطاق النظام وتسجيل الدخول باستخدام خيار ابل وواجهة جديدة لتحرير الصور.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="info-2">
+                <table>
+                    <tr>
+                      <th>العلامة التجارية</th>
+                      <td>آبل</td>
+                    </tr>
+                    <tr>
+                      <th>اللون</th>
+                      <td>رصاصي</td>
+                    </tr>
+                    <tr>
+                      <th>تقنية الاتصال</th>
+                      <td>Wireless</td>
+                    </tr>
+                    <tr>
+                      <th>اسم الطراز</th>
+                      <td>MWP22ZP/A</td>
+                    </tr>
+                    <tr>
+                      <th>الابعاد</th>
+                      <td>160.8×78.1×7.7 ملم جرام</td>
+                    </tr>
+                    <tr>
+                      <th>الشريحة</th>
+                      <td>يدعم الهاتف شريحتين</td>
+                    </tr>
+                    <tr>
+                      <th>المادة</th>
+                      <td>الزجاج</td>
+                    </tr>
+                    <tr>
+                      <th>الوزن</th>
+                      <td>‏0.45 أوقية</td>
+                    </tr>
+                    <tr>
+                      <th>المادة</th>
+                      <td>الزجاج</td>
+                    </tr>
+                  </table>
+            </div>
+            <div class="info-3">
+                <main>
+                    <aside class="rating">
+                        <div class="stars">
+                            <p class="title">4.5 من 5</p>
+                            <i class="fa-solid fa-star active-star"></i><i class="fa-solid fa-star active-star"></i><i class="fa-solid fa-star active-star"></i><i class="fa-solid fa-star active-star"></i><i class="fa-solid fa-star text-secondary"></i>
+                            <p>60 تقييم على المنتج</p>
+                        </div>
+                        <div class="comment">
+                            <p>أضف تعليقك</p>
+                            <input type="text" placeholder="برجاء اضافة تعليقك ..">
+                            <button class="btn">نشر تعليقك</button>
+                        </div>
+                </aside>
+                <aside class="content">
+                    <div class="sorter">
+                        <p>تعليقات المستخدمين</p>
+                        <div class="dropdown bottom-tot-top">
+                            <span class="text">ترتيب حسب :</span>
+                            <a class="dropdown-toggle" href="#" role="button" id="sortDropdown1" data-bs-toggle="dropdown" aria-expanded="false">
+                                الاحدث <i class="fa-solid fa-chevron-down"></i>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="sortDropdown1">
+                                <li><a class="dropdown-item" onclick="changeSortOrder('الاحدث')">الاحدث</a></li>
+                                <li><a class="dropdown-item" onclick="changeSortOrder('الاقدم')">الاقدم</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="comments">
+                        <div class="comment-list">
+                            <div class="comment">
+                                <div class="profile">
+                                    <div class="account"><img src="https://s3-alpha-sig.figma.com/img/ec53/b6f6/d1a7d76a0f3321c086a014b258bf83fb?Expires=1724630400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=pljFgabfCW2qqz32PPuq4Jd8F5aNie0iDCG1-tFcpBJ2e7ttVZLMNIhTDDL0Q7DsPh0YM5duRSG5zyXRlmT2wbN8amEG68XSm1GK-2nebZgYRhcxhGrHZU3B6xUVuWZll5oSRbPpm9Ve699XaktnkPewstp-4pjP26-BHZ1YIMYyuJr~LIvRxeOBqZvS9eTlXSZWOcxLsMvpk8vXXhiwnwlPFIATZvgELuYt~wciB0dT826oZHNypBdsi3MQmlm3K9o3L~G7Pna33-UL3niyaPs48XfTLWBWKserWdSEHRd0Elz4MRP2vtqBLi3KUdKRTiekfw49~wlEo5L~lGjx1w__" width="50px" height="50px" style="border-radius: 50%;" alt="account-profile"><div style="margin-right: 1rem;"><p class="name">محمد خالد</p><i class="fa-solid fa-star active-star"></i><i class="fa-solid fa-star active-star"></i><i class="fa-solid fa-star active-star"></i><i class="fa-solid fa-star active-star"></i><i class="fa-solid fa-star"></i></div></div>
+                                    <p class="date">13/10 /2020</p>
+                                </div>
+                                <p>استخدمنا سلة قبل أربع سنوات ثم غادرناها قبل أن يكون فيها خيارات ترقية مدفوعة، خسرنا مبالغ كبيرة جدا في عمل متجر وتعبنا جدا في التعامل مع المبرمجين . ثم عدنا لمنصة سلة ووجدنا تطورا هائلاً وعملا مميزاً</p>
+                            </div>
+                            <div class="comment">
+                                <div class="profile">
+                                    <div class="account"><img src="https://s3-alpha-sig.figma.com/img/3a21/9b6c/bfddd6a813d90c42da2c34a70bbd3215?Expires=1724630400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=oCcgfOiae6JoEVSHU-67NKu73UscVjN4Km0jXLR4D1GWmjVNukiN3urIs8tMmFcK0f3ZRbRcmHplX1iOuvZJHSVjgZjLjTV86Qai1BDpFAB6VXtQHaapmMFI795TgxffDK~GUwwWMLGoTm0IM6Pf~SSHcbQHcu7vm33~27P5kPaVcF0nZJETWA-cI7ddTrdhqVl1MCmGQRtMjl0Vglkpd1dlVV13Q~w85L8vLCQhsTx4PQb40dMn2vXC52dK67uk1X7NQH-rH~uAX4MKMQ8YA~exYsiIOUe~b2h98d0LAkie5iJCCDopYy8hxdXKDQi1WW3hAbPyLIzXfzZpaRPgcw__" width="50px" height="50px" style="border-radius: 50%;" alt="account-profile"><div style="margin-right: 1rem;"><p class="name">رضا محمد</p><i class="fa-solid fa-star active-star"></i><i class="fa-solid fa-star active-star"></i><i class="fa-solid fa-star active-star"></i><i class="fa-solid fa-star active-star"></i><i class="fa-solid fa-star"></i></div></div>
+                                    <p class="date">13/10 /2020</p>
+                                </div>
+                                <p>استخدمنا سلة قبل أربع سنوات ثم غادرناها قبل أن يكون فيها خيارات ترقية مدفوعة، خسرنا مبالغ كبيرة جدا في عمل متجر وتعبنا جدا في التعامل مع المبرمجين . ثم عدنا لمنصة سلة ووجدنا تطورا هائلاً وعملا مميزاً</p>
+                            </div>
+                            <div class="comment">
+                                <div class="profile">
+                                    <div class="account"><img src="https://s3-alpha-sig.figma.com/img/b7c2/a138/02b06bdcfe627aae96cb3ecee967edf6?Expires=1724630400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=coWXrfCDAUBNzcWqliB7lVX1lLHgaAo8pBUZnITwZz~lOP0-ZrFXe7aM7pu4aLO~m~c1zJthuofy9K90fAiCvBXeFT~uTrLL1eXeAhxNW489mqUw-9NEzgUE8jzau4FE~cMq7WDVXp5dFm0sC522PKBbPsufHsJx8mwnY~Il1wXEC3Q04-EGCST0dqH7cafx~sYs82I4-~Z-PzIoFB3cG4-nPVeiKqUnkgpETIxIxQAhRCmlXXo0rcvSlsn5nFHmQ6QJWQ3pHf74mNxdgiayAqNBPY4WqWc50QsI~FV0~Xuh2rWJ4D3pNsN9XEIaoUNX091UTBDm5avK~pEskdCM~A__" width="50px" height="50px" style="border-radius: 50%;" alt="account-profile"><div style="margin-right: 1rem;"><p class="name">محمد خالد</p><i class="fa-solid fa-star active-star"></i><i class="fa-solid fa-star active-star"></i><i class="fa-solid fa-star active-star"></i><i class="fa-solid fa-star active-star"></i><i class="fa-solid fa-star"></i></div></div>
+                                    <p class="date">13/10 /2020</p>
+                                </div>
+                                <p>استخدمنا سلة قبل أربع سنوات ثم غادرناها قبل أن يكون فيها خيارات ترقية مدفوعة، خسرنا مبالغ كبيرة جدا في عمل متجر وتعبنا جدا في التعامل مع المبرمجين . ثم عدنا لمنصة سلة ووجدنا تطورا هائلاً وعملا مميزاً</p>
+                            </div>
+                            <div class="comment">
+                                <div class="profile">
+                                    <div class="account"><img src="https://s3-alpha-sig.figma.com/img/ec53/b6f6/d1a7d76a0f3321c086a014b258bf83fb?Expires=1724630400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=pljFgabfCW2qqz32PPuq4Jd8F5aNie0iDCG1-tFcpBJ2e7ttVZLMNIhTDDL0Q7DsPh0YM5duRSG5zyXRlmT2wbN8amEG68XSm1GK-2nebZgYRhcxhGrHZU3B6xUVuWZll5oSRbPpm9Ve699XaktnkPewstp-4pjP26-BHZ1YIMYyuJr~LIvRxeOBqZvS9eTlXSZWOcxLsMvpk8vXXhiwnwlPFIATZvgELuYt~wciB0dT826oZHNypBdsi3MQmlm3K9o3L~G7Pna33-UL3niyaPs48XfTLWBWKserWdSEHRd0Elz4MRP2vtqBLi3KUdKRTiekfw49~wlEo5L~lGjx1w__" width="50px" height="50px" style="border-radius: 50%;" alt="account-profile"><div style="margin-right: 1rem;"><p class="name">محمد خالد</p><i class="fa-solid fa-star active-star"></i><i class="fa-solid fa-star active-star"></i><i class="fa-solid fa-star active-star"></i><i class="fa-solid fa-star active-star"></i><i class="fa-solid fa-star"></i></div></div>
+                                    <p class="date">13/10 /2020</p>
+                                </div>
+                                <p>استخدمنا سلة قبل أربع سنوات ثم غادرناها قبل أن يكون فيها خيارات ترقية مدفوعة، خسرنا مبالغ كبيرة جدا في عمل متجر وتعبنا جدا في التعامل مع المبرمجين . ثم عدنا لمنصة سلة ووجدنا تطورا هائلاً وعملا مميزاً</p>
+                            </div>
+                            <div class="comment">
+                                <div class="profile">
+                                    <div class="account"><img src="https://s3-alpha-sig.figma.com/img/3a21/9b6c/bfddd6a813d90c42da2c34a70bbd3215?Expires=1724630400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=oCcgfOiae6JoEVSHU-67NKu73UscVjN4Km0jXLR4D1GWmjVNukiN3urIs8tMmFcK0f3ZRbRcmHplX1iOuvZJHSVjgZjLjTV86Qai1BDpFAB6VXtQHaapmMFI795TgxffDK~GUwwWMLGoTm0IM6Pf~SSHcbQHcu7vm33~27P5kPaVcF0nZJETWA-cI7ddTrdhqVl1MCmGQRtMjl0Vglkpd1dlVV13Q~w85L8vLCQhsTx4PQb40dMn2vXC52dK67uk1X7NQH-rH~uAX4MKMQ8YA~exYsiIOUe~b2h98d0LAkie5iJCCDopYy8hxdXKDQi1WW3hAbPyLIzXfzZpaRPgcw__" width="50px" height="50px" style="border-radius: 50%;" alt="account-profile"><div style="margin-right: 1rem;"><p class="name">رضا محمد</p><i class="fa-solid fa-star active-star"></i><i class="fa-solid fa-star active-star"></i><i class="fa-solid fa-star active-star"></i><i class="fa-solid fa-star active-star"></i><i class="fa-solid fa-star"></i></div></div>
+                                    <p class="date">13/10 /2020</p>
+                                </div>
+                                <p>استخدمنا سلة قبل أربع سنوات ثم غادرناها قبل أن يكون فيها خيارات ترقية مدفوعة، خسرنا مبالغ كبيرة جدا في عمل متجر وتعبنا جدا في التعامل مع المبرمجين . ثم عدنا لمنصة سلة ووجدنا تطورا هائلاً وعملا مميزاً</p>
+                            </div>
+                            <div class="comment" style="border: none;">
+                                <div class="profile">
+                                    <div class="account"><img src="https://s3-alpha-sig.figma.com/img/b7c2/a138/02b06bdcfe627aae96cb3ecee967edf6?Expires=1724630400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=coWXrfCDAUBNzcWqliB7lVX1lLHgaAo8pBUZnITwZz~lOP0-ZrFXe7aM7pu4aLO~m~c1zJthuofy9K90fAiCvBXeFT~uTrLL1eXeAhxNW489mqUw-9NEzgUE8jzau4FE~cMq7WDVXp5dFm0sC522PKBbPsufHsJx8mwnY~Il1wXEC3Q04-EGCST0dqH7cafx~sYs82I4-~Z-PzIoFB3cG4-nPVeiKqUnkgpETIxIxQAhRCmlXXo0rcvSlsn5nFHmQ6QJWQ3pHf74mNxdgiayAqNBPY4WqWc50QsI~FV0~Xuh2rWJ4D3pNsN9XEIaoUNX091UTBDm5avK~pEskdCM~A__" width="50px" height="50px" style="border-radius: 50%;" alt="account-profile"><div style="margin-right: 1rem;"><p class="name">محمد خالد</p><i class="fa-solid fa-star active-star"></i><i class="fa-solid fa-star active-star"></i><i class="fa-solid fa-star active-star"></i><i class="fa-solid fa-star active-star"></i><i class="fa-solid fa-star"></i></div></div>
+                                    <p class="date">13/10 /2020</p>
+                                </div>
+                                <p>استخدمنا سلة قبل أربع سنوات ثم غادرناها قبل أن يكون فيها خيارات ترقية مدفوعة، خسرنا مبالغ كبيرة جدا في عمل متجر وتعبنا جدا في التعامل مع المبرمجين . ثم عدنا لمنصة سلة ووجدنا تطورا هائلاً وعملا مميزاً</p>
+                            </div>
+                        </div>
+                        <button class="show-more">عرض المزيد</button>
+                    </div>
+                </aside>
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <!--list-container-->
+    <div class="container list-container">
+        <div class="products">
+          <div class="main-products w-100">
+            <p class="icon-title">منتجات خاصة<br><span> تسوق احدث المنتجات المميزة المضافة جديد</span></p>
+            <button class="btn"><a href="Pages/Categories.html" style="color: #62D0B6;">عرض الكل <i class="fa-solid fa-chevron-left"></i></a></button>
+          </div>
+          <div class="product-container">
+            <div class="card" style="width: 18rem;">
+              <img src="https://s3-alpha-sig.figma.com/img/4230/5e0a/b5ae18a2e96b1299b42302115afc0219?Expires=1724630400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=XHa2HNqcl-Vc1uf7gpsA4uh5m2V3VFjP4dYW0wEXsiFxmRg3jVuapmiqscIgE8ITMBU9yebvqZKmTAfoACDf2VaHNPxwGQoo-ebDQo9tIOVz~MpbWwv6nfBMyPqaFi11NuOHvdJzzdWMFnl9~JmrICd~Wm9Ouh-iSgxt2Eo5XldVPH12agdu4rHhK~epmMHBq3MWIELpROc2hIbzCCiPvZhB7cTs8cOrUVgrqkiuNxgxeg~BjJIkbNTsXjO8k-jlSRvfnMP-OvPlKuzV~7Ms9caiBfajpVq7J0T7DpRtvNGIM4yOd5iG~kSoLTjyTFBe-vFtXUMlrYaDwUPSKqBx9Q__" class="card-img-top" style="height: 228px;" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">سماعات</h5>
+                <p class="card-text">ساعة ذكية جديدة من سلسلة 8 <span>سوار رياضي اسود - عادي.</span></p>
+                <p class="price">250.00 رس <span>350.00 ر.س</span></p>
+                <button href="#" class="btn add"><i class="fa-solid fa-cart-shopping"></i>&nbsp; أضف للسلة</button>
+                <button href="#" class="btn save"><i class="fa-regular fa-heart"></i></button>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <img src="https://s3-alpha-sig.figma.com/img/efdf/57ac/4b00694333cdc384d0328bb643ebfbd3?Expires=1724630400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=NwagWhc54EfRxGfxwUx3bHczKbISmgBwnFN6EkrPEbx~WSIFYm7lld74I~52l062YmOJefREDOJUB6Cu-Ij8J116Vkyeme5wTMkcJa88zkDTdkQ2Eqr8HGmjTvxU6uErFnv~g8fDP~TqigP89jdSBcdxjO8mwy-CoJsSE45oMZgrEWi86SeE9Ghgz9gy5n8HwLFhK~j2r2E7Su-cVuLyz57Dk3B-kQIr7UpnKEiV~PXOo9urVoWUzqWtFmJckM1EdqsHNhbc99BAgCUw27Ey-aWQ4yTBleyWGJ3URmPyXoICVPRxCLk6ez1JGSFHhQyI0k07sq0Or7j97VjcHSI3vQ__" class="card-img-top" style="height: 228px;" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">سماعات</h5>
+                <p class="card-text">ساعة ذكية جديدة من سلسلة 8 <span>سوار رياضي اسود - عادي.</span></p>
+                <p class="price">250.00 رس <span>350.00 ر.س</span></p>
+                <button href="#" class="btn add"><i class="fa-solid fa-cart-shopping"></i>&nbsp; أضف للسلة</button>
+                <button href="#" class="btn save"><i class="fa-regular fa-heart"></i></button>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <img src="https://s3-alpha-sig.figma.com/img/e2d0/bb31/68a44debbfe25c88f47387a17725eae0?Expires=1724630400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=qVDJDbbPpkhAhm~Qn5bQLbpEHGMP5pBvtDmKGTXlMpiF9UtFgNsX7DqD1EC2DVP16l6EwNQDMZP5d4zt0KVt-5eMsbOkSdz9XnQsVyIaesdoYLWGT8a8uPNqx6Bc7N~Yq2Jwni9hCyP9EJCBpFdnFuOWnK9SFiCoXYiGfKlySz-jrTRZrZ7FjSCAMnPKoXavqpt2yjdl~mByBE48rP2-zA1ZdSAQEyKX~Rkh3MQDkdFFftq7Lw7MhH1EZjBoArW808iM~N4oUxNRuj-xiVan1rtgOpIgpafohTYOHuKWI7~7uQaGZHvVeS8RWfRFF-oOKJDo~mPnk0Nk-oYj9uoOwQ__" class="card-img-top" style="height: 228px;" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">سماعات</h5>
+                <p class="card-text">ساعة ذكية جديدة من سلسلة 8 <span>سوار رياضي اسود - عادي.</span></p>
+                <p class="price">250.00 رس <span>350.00 ر.س</span></p>
+                <button href="#" class="btn add"><i class="fa-solid fa-cart-shopping"></i>&nbsp; أضف للسلة</button>
+                <button href="#" class="btn save"><i class="fa-regular fa-heart"></i></button>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <img src="https://s3-alpha-sig.figma.com/img/b135/f41b/06fd7aefa9da790644c5de25d542ddb1?Expires=1724630400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=DP52QSIIVXGkUxsAZ1VL-OIpnVySD~ubTUsONmlc2WujL1Q4vCdyBKGbfBnTsTPZCGVl-EYTNap9MNEz8Z0MwZCWr310h-e9nmzIsLO2j2ZTbnhxN88-Mw96xAsNKO9BJQ~V~VtNZEACgpMG4bsp~ImvUYEfX9cK~l0KQlMxVkqVBY3ue1RiRA0iHpfXadCKcmaVtqlG4~X~oTpcEL-Zc9Dj6XLlx2QLbEXp8BRNF4CLMJbZGCiTo7hMRATuEmP73wIwMVa0ITohHSM9d6FDpb05bbVIAJ6C-rOj-fwxTf-eBpzvEGXH3jdk976pZkypn2f233AwUdCz9jKPreTbUg__" class="card-img-top" style="height: 228px;" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">سماعات</h5>
+                <p class="card-text">ساعة ذكية جديدة من سلسلة 8 <span>سوار رياضي اسود - عادي.</span></p>
+                <p class="price">250.00 رس <span>350.00 ر.س</span></p>
+                <button href="#" class="btn add"><i class="fa-solid fa-cart-shopping"></i>&nbsp; أضف للسلة</button>
+                <button href="#" class="btn save"><i class="fa-regular fa-heart"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!--Footer-->
+    <footer>
+        <div class="top-footer">
+          <div class="content container">
+              <div class="cart"><div class="icon"><i class="fa-solid fa-envelope"></i></div><p class="icon-title">الاشتراك فى النشرة البريدية <br><span>انضم الآن واحصل على خصم 10٪ على مشترياتك التالية!</span></p></div>
+            <div class="email">
+              <p class="text">يمكنك إلغاء الاشتراك في أي لحظة</p>
+              <div class="search-box">
+                <input type="text" placeholder="ادخل البريد الالكترونى">
+                <button class="btn btn-success">إشتراك</button>
+              </div>
+            </div>
+            <div class="app">
+              <p class="text">تطبيقات الجوال</p>
+              <div class="store">
+                <div class="app-container">
+                  <div class="app bg-dark">
+                    <p class="text">Download on the <br><span>App Store</span></p> <i class="fa-brands fa-apple"></i>
+                  </div>
+                </div>
+                <div class="app-container">
+                  <div class="app bg-dark">
+                    <p class="text">Download on the <br><span>App Store</span></p> <i class="fa-brands fa-apple"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="second-footer container">
+          <div class="about">
+            <p class="title">عن متجرنا</p>
+            <p class="text">متجر سلة من افضل المتاجر التى تقوم ببيع المنتجات الرقمية بأفضل الاسعار وماركات عالمية تسوق الان واطلع على المزيد من التصاميم واستمتع بأفضل العروض والخصومات</p>
+          </div>
+          <div class="account">
+            <p class="title">حسابى</p>
+            <a href="#">حسابى</a><br>
+            <a href="Pages/Cart.html">طلباتى</a><br>
+            <a href="Pages/Cart.html">سلة المشتريات</a><br>
+            <a href="Pages/Cart.html">المفضلة</a><br>
+          </div>
+          <div class="links">
+            <p class="title">روابط مهمة</p>
+            <a href="#">من نحن</a><br>
+            <a href="#">ساسية الخصوصية</a><br>
+            <a href="#">الشروط والاحكام</a><br>
+            <a href="#">من نحن</a><br>
+            <a href="#">الدعم الفنى</a><br>
+          </div>
+          <div class="contact">
+            <p class="title">عن متجرنا</p>
+            <p href="#">واتساب : <br><span>009612345678932</span></p>
+            <p href="#">موبايل : <br><span>009612345678932</span></p>
+            <a href="https://salla.sa">البريد : <br><span>https://salla.sa</span></a>
+          </div>
+          <div class="follow">
+            <p class="title">تابعنا على</p>
+            <a href="facebook.com"><i class="fa-brands fa-facebook"></i></a>
+            <a href="twitter.com"><i class="fa-brands fa-twitter"></i></a>
+            <a href="instagram.com"><i class="fa-brands fa-instagram"></i></a>
+            <a href="snapchat.com"><i class="fa-brands fa-snapchat"></i></a>
+          </div>
+        </div>
+        <div class="bottom-footer">
+          <div class="copyright">الحقوق محفوظة لمنصة سلة © 2023</div>
+          <div class="imgs">
+            <div class="vat"><img src="https://s3-alpha-sig.figma.com/img/d8c5/bfae/6f0c1b6cdb7faa0e955b7c2d7a8f6df4?Expires=1724630400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=UReB9P6ZzTOMwnvzISmks0Cuw~06Y~8vOCji~erYwOerTjB7--0PDYoEAPTkmyI5r5xNHzxPzHe2rClmpwTUuONIpukihNmXSVpHywzXX7lTtV5YsAlkuVtCQ2cckgVhNzCXyxRXb0pJXjUwfkZ2u5zAAODkZUlnTe4pncZ-8MiGpOBMScCeBVWxpCIQwD5AkC4CKluG~sPu9Ef4U-ZMaQ1QW4rJh6HNYxHwNegoCOqR-BLBxQjbfbinkbLnFOSvYw3O~e-qEjfqIs~YkxNjZUkwbRs~7ZEDbblZIONquNEk31EJeoDyaje855By54KKvqaVuWN9sBBHLPaUg9nVzA__" alt=""><p>الرقم الضريبى : 546987552</p></div>
+            <div class="payment">
+              <div><img src="https://s3-alpha-sig.figma.com/img/a85e/315d/1fc681b820f30a9fc23952fedcaf6419?Expires=1724630400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=FhyXYTpVfAa05qB6ABk5wEZdTUjYw2edLYUIzAFNBigUJcWKIWEuOwQvi5BVCuMOYm18JkllUYrze5LulGaXhekMBk4R3mS7GyeKz3P3abhmwUGsK7EBYqijDOojKq434XqXoQdA5fw6TSwwrDRWTBROV6FKp1Ba1WfUvWyACzzROvMiBlmOE4h~~4hBSuXRB-usuodA8iRC~o-MSJWby8uIrM11O2V4ZqeFlSpcdglKUL67WfV6VJgp~spFttRDaVe8MQDVFFrkz595mFLTOCbXoqx5~II8NOWqTbRPSx8uWK3K2Z8aE62Aa~dGQeBXruDgYxOk-4svUgupu~crIg__" alt=""></div>
+              <div><img src="https://s3-alpha-sig.figma.com/img/3ebc/f58d/6f85eb2ada37eb07859f25164c3c7264?Expires=1724630400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=dk6lolJgGRsCfZ2vB5FgzAVG2WgA2K8bk38uyEfrH1BFFBX1nHqPOvIkDZhrabln7S77Q3eXh0ACZxJ6VZgb1mYq8cWVmmZJpycVy8rF8u~uLB6eKw4QWyG3RhotriFn~KJcadYyaowJJS8PtEk75CHJnl7JOFhI5x7vU3YnP647vYd-MnBUbfIyP0RHk-bFgvEw1xEMn1Cnka-DEj2Vo-otgv0X14wIiEbUXHDKljl5SMb9hzwZCjCtOAPcnlItEE1bkisyw0Z-T22ytHeE4Fli3R0OpUAZyhyEs3XZ0nA~QK9g3-DUKye2tyFYJvD-A5dX-yJwXoPgSRmu3-09pw__" alt=""></div>
+              <div><img src="https://s3-alpha-sig.figma.com/img/30b2/89b9/0bc206396168a2af91aefc5909e86eff?Expires=1724630400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=KquwflH-Qd4LDNu7vGebLEe3ImtTEDX7P-W6CnxikJUoPj8Ioj0Dp0kfX6rsn9r8boxwBmVfouI3VOAccMM5DPK8IO4r8fzzY-iXMb0kRl0z0j~ddy-oV3gCqlFahdRq4Jo2rXPtpwKG3Xntx2gHmUzOURq9l3vF~IUksU5fNeHKYSHw48uyBChVcbrkNkNp8mj8yVQSBhgbvWii65JAk7SVUeyq82JrfHbjsG50qaKPZ-Nskj3FkryqorQuKmfsS9-rqn2G6oRWgoCWiWo4gt1JME1HGWaDl-wzbYhGOhYeqwqr~rwX4VVvMHTwBjoRPKxh~VnH7WRQ2A1QbuGv4Q__" alt=""></div>
+              <div><img src="https://s3-alpha-sig.figma.com/img/3ece/0687/e503b99cf8c16c9765b5d41af8da2e6e?Expires=1724630400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=GYdtefNkW6KYZwNY-n-DXC0sg8ht1sCUnS4wOXyKUwyeOVCFIFPbShy0E5d1PaL9dOzh3obhMXI631G8kh52H6zRe1Z5E6-xQo3iYVyYHNSYZGYiDrka5NZckjsdFZbBBnE-lhNKPmSuEvGwUquhkClgXNkKhC67bSIsZfLlagpu60iYw2noimAMSNdbZhTCxAWtqIDDMiGA-0qrmP~dJFvqHmcVetRh1ARMQm01il63-PkmwEqCqhQkHoTfWlTUd7JvhG98nLNxMQNIAGlJpN0HRkKmbGJr1t2Dp-rQpejTsrQzv40TEgw8AVuQMadQgj3fJL8reyIf9008tg4rug__" alt=""></div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="../JS/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.8.0/nouislider.min.js"></script>
+    <script src="../JS/loading.js"></script>
+</body>
+</html>

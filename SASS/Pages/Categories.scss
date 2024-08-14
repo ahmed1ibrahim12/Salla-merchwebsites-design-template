@@ -1,0 +1,290 @@
+@import "../sass-utils/helpers";
+@import "../sass-utils/mixins";
+@import "../sass-utils/variables";
+@import "../components/navbar";
+@import "../components/footer";
+@import "../components/buttons";
+@import "../sass-utils/media";
+@font-face {
+    font-family: 'DINNextLTArabicLight';
+    src: url('../../Assets/fonts/DIN\ Next\ LT\ Arabic\ Light.ttf') format('truetype');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'DINNextLTArabicLight', sans-serif;
+    a{
+        text-decoration: none !important;
+    }
+}
+
+body {
+    font-family: 'DIN Next LT Arabic Light', sans-serif;
+  }
+
+.product .show{
+    display: flex;
+}
+
+.visible {
+    display: block;
+}
+
+.hide{
+    display: none
+}
+//sorting
+.main{
+    @include flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    .div-1{
+        @include flex;
+        flex-direction: column;
+        width: 900px;
+        .display{
+            @include flex;
+            justify-content: space-between;
+            padding: 1rem;
+            background-color: white;
+            border: 1px solid #EEEEEE;
+            width: 100%;
+            .buttons{
+                button{
+                    background-color: white;
+                    border: 1px solid #EEEEEE;
+                    color: #A5A5A5;
+                    outline: none;
+                    padding: 5px;
+                    width: 34px;
+                    height: 34px;
+                }
+                .active{
+                    color: white;
+                    background-color: $icons-color;
+                    border: 1px solid $icons-color;
+                }
+            }
+            .dropdown{
+                .text{
+                    color: #A5A5A5;
+                    font-weight: bold;
+                }
+                .dropdown-toggle{
+                    color: #333333;
+                    font-weight: bold;
+                }
+                i{
+                    color: #666666;
+                    font-weight: bold;
+                }
+            }
+        }
+        .products{
+            margin-top: 3rem;
+            .product{
+                background-color: white;
+                width: 100%;
+                border: 1px solid #EEEEEE;
+                margin-bottom: 1rem;
+                display: flex;
+                padding: 1rem;
+                .image{
+                    position: relative;
+                    width: 240px;
+                }
+                .text{
+                    margin-left: 1rem;
+                    font-weight: bold;
+                    .title{
+                        font-size: 14px;
+                        color: $icons-color;
+                    }
+                    .substitle{
+                        font-size: 18px;
+                        span{
+                            font-size: 16px;
+                            color: #666666;
+                        }
+                    }
+                    .rating{
+                        font-size: 14px;
+                        span{
+                            color: #A5A5A5;
+                        }
+                        .active-star{
+                            color: #FFC62A;
+                        }
+                    }
+                    .price{
+                        font-size: 18px;
+                        color: #F55157;
+                        span{
+                            color: #A5A5A5;
+                            text-decoration: line-through;
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+        .show-button{
+            background-color: transparent;
+            color: $icons-color;
+            border: 1px solid $icons-color;
+            width: 308px;
+            font-weight: bolder;
+            &:hover{
+                background-color: $icons-color;
+                color: white;
+            }
+        }
+    }
+}
+
+//sorting system
+.products {
+    @include flex;
+    justify-content: space-between;
+
+    &.grid-view {
+        @include flex;
+        justify-content: space-between;
+
+        .product {
+            width: 282px !important;
+            display: block !important;
+        }
+
+        .add {
+            width: 180px;
+        }
+
+        .title {
+            font-size: 16px;
+        }
+
+        .subtitle {
+            font-size: 15px;
+
+            span {
+                font-size: 14px;
+            }
+        }
+
+        .rating {
+            display: none;
+        }
+    }
+
+    &.list-view {
+        display: block;
+        justify-content: space-between;
+
+        .product {
+            width: 100%;
+        }
+
+        .add {
+            width: 550px;
+        }
+
+        .title {
+            font-size: 14px;
+        }
+
+        .subtitle {
+            font-size: 18px;
+
+            span {
+                font-size: 16px;
+            }
+        }
+
+        .rating {
+            display: block;
+        }
+    }
+}
+
+
+//filter
+.div-2{
+    width: 290px;
+    border: 1px solid #EEEEEE;
+    padding: 1rem;
+    margin: 1rem;
+    .dropdown-container{
+        .type{
+            .drop{
+                @include flex;
+                justify-content: space-between;
+                cursor: pointer;
+                width: 100%;
+                background-color: transparent;
+                border: none;
+                outline: none;
+                font-size: 16px;
+                font-weight: bold;
+                i{
+                    color: $icons-color;
+                }
+            }
+        }
+        .filter-type{
+            display: none;
+            label, a{
+                font-size: 14px;
+                font-weight: bold;
+            }
+            .input{
+                @include flex;
+                justify-content: space-between;
+                margin-bottom: 0.5rem;
+                font-size: 14px;
+                color: #666666;
+            }
+        }
+    }
+    .color-div{
+        display: inline-block;
+        width: 13px;
+        height: 13px;
+        border-radius: 50%;
+        margin: 0 0.5rem;
+    }
+}
+
+@media (max-width: 768px){
+    .main{
+        display: flex;
+        justify-content: center;
+    }
+    .div-1{
+        width: 600px !important;
+    }
+    .div-2{
+        width: 600px;
+    }
+    .add {
+        width: 180px !important;
+    }
+}
+
+@media (max-width: 425px){
+    .products.grid-view {
+        justify-content: center;
+    }
+    .products{
+        justify-content: center !important;
+        .product{
+            display: block !important;
+            width: auto !important;
+        }
+    }
+    .hide{
+        display: block !important;
+    }
+}
