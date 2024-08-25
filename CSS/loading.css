@@ -1,0 +1,66 @@
+/* Resetting body margin and padding */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Loading screen styles */
+#loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #6EC1E4, #FBD786, #F7797D);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Shopping cart animation */
+.loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: bounce 1.5s infinite;
+}
+
+.shopping-cart {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.cart-icon {
+    width: 30px;
+    height: 30px;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23000000"><path d="M7 18c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2c1.1 0 2-.9 2-2s-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2c1.1 0 2-.9 2-2s-.9-2-2-2zM7.16 11l.77 3h8.38l.77-3H7.16zM19.14 6H6.73l-1-4H2v2h2.38l1.82 7.24l-1.1 3.96c-.14.5-.22 1.02-.22 1.54C4.99 18.95 6.04 20 7.38 20H18v-2H7.42c-.07 0-.13-.04-.16-.1c-.04-.06-.04-.14-.02-.21l1.1-3.95h8.97c.9 0 1.67-.62 1.92-1.48l1.38-5.34c.13-.48-.25-.96-.75-.96z"/></svg>') no-repeat center;
+    background-size: contain;
+    animation: shake 0.5s infinite;
+}
+
+/* Bounce animation for the cart */
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+}
+
+/* Shake animation for the cart icon */
+@keyframes shake {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(-10deg); }
+    75% { transform: rotate(10deg); }
+}
+
+/* Content styling */
+#content {
+    display: none;
+}
