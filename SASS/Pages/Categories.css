@@ -677,6 +677,7 @@ body {
 .main .div-1 .products .product .image {
   position: relative;
   width: 240px;
+  height: 100%;
 }
 .main .div-1 .products .product .text {
   margin-left: 1rem;
@@ -685,6 +686,11 @@ body {
 .main .div-1 .products .product .text .title {
   font-size: 14px;
   color: #62D0B6;
+}
+.main .div-1 .products .product .text .add {
+  width: 550px;
+  padding: 1rem !important;
+  height: auto !important;
 }
 .main .div-1 .products .product .text .substitle {
   font-size: 18px;
@@ -742,7 +748,7 @@ body {
   display: block !important;
 }
 .products.grid-view .add {
-  width: 180px;
+  width: 180px !important;
 }
 .products.grid-view .title {
   font-size: 16px;
@@ -762,9 +768,6 @@ body {
 }
 .products.list-view .product {
   width: 100%;
-}
-.products.list-view .add {
-  width: 550px;
 }
 .products.list-view .title {
   font-size: 14px;

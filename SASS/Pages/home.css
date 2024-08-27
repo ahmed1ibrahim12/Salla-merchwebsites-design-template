@@ -1058,7 +1058,7 @@ header .search i {
   align-items: center;
   flex-wrap: wrap;
   border: 1px solid #62D0B6;
-  width: 600px;
+  width: 640px;
   border-radius: 8px;
   margin-bottom: 1rem;
 }
@@ -1239,7 +1239,7 @@ header .search i {
 
 .pattern-3 {
   background-image: url("https://s3-alpha-sig.figma.com/img/dd4a/ca0c/04ee959688f403dde6c69ca3dce65d79?Expires=1725840000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ZLh8H-D-~b8RntBMjN6BS3j0XYyJwwsAeek4Yml8UtShy1QWpbFkZdps15LTti0yDKeyD5pCZSoyLwQxQ4tc1FI6VzNtlzbFk139oDF~aizz8eB-2SplRRiM7dD1Q-4ap0i1knBeqIuylda-n7nMvoS4m-UrHZxU6JF3JyOrZ--idK6SM~HXIy99MFiuKiUUnuPMDehbjkZMbUb6TUXGmavOtUf7GPzh790aLPqNyW9X52u10JddCWXyNSHpRxsmxV2UCMXreRPu9RJQRSx4FRCrVxraGv7nM~gxut9KSUht9pzINgwlYW7OKGEEmzs64djM2W-pEdeQFcJr~v6n6g__");
-  height: 500px;
+  height: 594.688px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1256,6 +1256,9 @@ header .search i {
   padding: 1.5rem;
   border-radius: 50%;
   margin: 1rem;
+  width: 100px;
+  height: 100px;
+  text-align: center;
 }
 
 .review-container {
@@ -1270,7 +1273,7 @@ header .search i {
 }
 
 .review {
-  width: 384px;
+  width: 32%;
 }
 .review .content {
   padding: 1rem;
@@ -1321,7 +1324,7 @@ header .search i {
   justify-content: space-between;
 }
 .blog .blog-card {
-  width: 384px;
+  width: 32%;
   text-align: center;
 }
 .blog .blog-card .content {
@@ -1372,6 +1375,9 @@ header .search i {
 .blog .image {
   position: relative;
 }
+.blog .image img {
+  aspect-ratio: 3/2;
+}
 .blog .image .date {
   position: absolute;
   top: 10px;
@@ -1397,7 +1403,7 @@ header .search i {
   justify-content: space-between;
 }
 .bran-container .brand {
-  width: 220px;
+  width: 19%;
   filter: grayscale(100%);
   padding: 1rem;
   border: 1px solid #EEEEEE;
