@@ -128,7 +128,7 @@
         justify-content: space-between !important;
         text-align: right;
         .banner{
-            width: 47%;
+            width: 49%;
         }
         .banner{
             height: 244px;
@@ -235,11 +235,12 @@
 
 //pattern
 .pattern{
-    background-image: url("https://s3-alpha-sig.figma.com/img/31cb/df21/bd606de6104285953885e8ed3963ded4?Expires=1725840000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=bfWzHUj~MFPXIycq~h~jONw-YhpX1Y7LEbVw-F-K4Ldi~2yB0XCs6r579pjzqTz-wjTFEkcBXSCnQBIjv26Clm5WkssIH5vHOeiB5kA8qtp6XYL1tGx2biv~VbrkMHYhlWHZno-7hGoxOSw~sueYz4XO30WhVgTyJxFypYiM1q~eu2zjGTOS1KfedEc1~d3P8TM9Dxmar4EFCm4WXQqkxXa12v5mmEIN5cbH1xK5meuxvUmqva5cmlpYdGGNxMnRYq4klEdNqNTERfQkkkDvd2a5ray3uonzKsmqvkEkpgwH0sB-wB1XmKEgirCIIBSdmBA2ia9lERwzuC~0xdi-qg__");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://s3-alpha-sig.figma.com/img/31cb/df21/bd606de6104285953885e8ed3963ded4?Expires=1725840000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=bfWzHUj~MFPXIycq~h~jONw-YhpX1Y7LEbVw-F-K4Ldi~2yB0XCs6r579pjzqTz-wjTFEkcBXSCnQBIjv26Clm5WkssIH5vHOeiB5kA8qtp6XYL1tGx2biv~VbrkMHYhlWHZno-7hGoxOSw~sueYz4XO30WhVgTyJxFypYiM1q~eu2zjGTOS1KfedEc1~d3P8TM9Dxmar4EFCm4WXQqkxXa12v5mmEIN5cbH1xK5meuxvUmqva5cmlpYdGGNxMnRYq4klEdNqNTERfQkkkDvd2a5ray3uonzKsmqvkEkpgwH0sB-wB1XmKEgirCIIBSdmBA2ia9lERwzuC~0xdi-qg__");
     padding: 3rem 0;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    @include flex;
     aside{
         display: inline-block;
         .img{
@@ -250,12 +251,14 @@
             @include flex;
             margin: 0 15%;
             h1{
-                font-size: 48px;
+                font-size: 70px;
                 font-weight: bolder;
+                margin-bottom: 5rem;
             }
             p{
                 font-size: 16px;
                 font-weight: bold;
+                margin-bottom: 2rem;
             }
             .btn{
                 background-color: $icons-color;
@@ -290,7 +293,7 @@
         padding: 15px;
         border-radius: 10px;
         display: inline-block;
-        width: 150px;
+        width: 14.2%;
     }
     .category-name {
         color: $text-color;
@@ -358,9 +361,9 @@
         }
     }
     .banner{
-        width: 384px;
+        width: 32%;
         height: 229px;
-        margin: 1rem;
+        margin-bottom: 1.5rem;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -610,7 +613,7 @@
     }
     .banner{
         background-color: #E0F6F0;
-        width: 384px;
+        width: 32%;
         padding: 1rem;
         transition: 0.7s;
         &:hover{

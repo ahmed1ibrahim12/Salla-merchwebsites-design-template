@@ -107,15 +107,17 @@ footer{
         a:hover{
             color: $icons-color;
         }
-        i{
-            padding: 10px;
-            border: 1px solid #A5A5A5;
-            border-radius: 50%;
-            color: #A5A5A5;
-            margin-left: 0.5rem;
-            &:hover{
-                color: $icons-color;
-                border: 1px solid $icons-color;
+        .follow{
+            i{
+                padding: 10px;
+                border: 1px solid #A5A5A5;
+                border-radius: 50%;
+                color: #A5A5A5;
+                margin-left: 0.5rem;
+                &:hover{
+                    color: $icons-color;
+                    border: 1px solid $icons-color;
+                }
             }
         }
     }
