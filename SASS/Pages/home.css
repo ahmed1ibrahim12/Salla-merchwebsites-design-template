@@ -596,6 +596,15 @@ header .search i {
   text-decoration: none !important;
 }
 
+.section-title {
+  font-size: 35px;
+  font-weight: bolder;
+}
+.section-title span {
+  font-size: 16px;
+  font-weight: bold;
+}
+
 .carousel img {
   height: calc(100vh - 156px);
 }
@@ -784,6 +793,10 @@ header .search i {
 .list-container .products .product-container .card-text {
   font-size: 16px;
   font-weight: bold;
+}
+.list-container .products .product-container .card-text span {
+  font-size: 14px;
+  color: #666666;
 }
 .list-container .products .product-container .price {
   font-size: 18px;
@@ -978,7 +991,10 @@ header .search i {
 .banners-container .banners1 .banner4 .content {
   width: fit-content;
   margin-right: auto;
-  margin-left: 3rem;
+  margin-left: 10rem;
+}
+.banners-container .banners1 .banner4 .content h1 {
+  font-size: 36px;
 }
 
 .products .items {

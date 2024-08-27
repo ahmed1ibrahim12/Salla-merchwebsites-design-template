@@ -22,6 +22,14 @@
     }
 }
 
+.section-title{
+    font-size: 35px;
+    font-weight: bolder;
+    span{
+        font-size: 16px;
+        font-weight: bold;
+    }
+}
 //Carousel
 .carousel{
     img{
@@ -194,6 +202,10 @@
             .card-text{
                 font-size: 16px;
                 font-weight: bold;
+                span{
+                    font-size: 14px;
+                    color: #666666;
+                }
             }
             .price{
                 font-size: 18px;
@@ -388,7 +400,10 @@
             .content{
                 width: fit-content;
                 margin-right: auto;
-                margin-left: 3rem
+                margin-left: 10rem;
+                h1{
+                    font-size: 36px;
+                }
             }
         }
     }
