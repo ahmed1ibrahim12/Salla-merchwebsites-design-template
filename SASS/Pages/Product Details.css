@@ -815,6 +815,9 @@ input[type=range]::-webkit-slider-thumb {
   color: #62D0B6;
   background-color: white;
 }
+.phone .content-container .list-container .number .buttons button i {
+  margin-left: 5px;
+}
 
 .border-btn {
   background-color: white !important;
