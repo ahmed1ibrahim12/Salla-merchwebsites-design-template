@@ -686,9 +686,16 @@
     .rating{
         @include flex;
         justify-content: space-between;
+        i{
+        color: #D6D6D6;
+        }
+        span{
+            font-size: 55px;
+            opacity: .5;
+        }
     }
     .active-star{
-        color: yellow
+        color: yellow !important;
     }
     .cart{
         @include flex;

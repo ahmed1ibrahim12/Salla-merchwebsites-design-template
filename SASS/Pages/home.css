@@ -1292,8 +1292,15 @@ header .search i {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+.review .rating i {
+  color: #D6D6D6;
+}
+.review .rating span {
+  font-size: 55px;
+  opacity: 0.5;
+}
 .review .active-star {
-  color: yellow;
+  color: yellow !important;
 }
 .review .cart {
   display: flex;
