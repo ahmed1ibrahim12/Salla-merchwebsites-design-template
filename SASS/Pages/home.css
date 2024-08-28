@@ -827,6 +827,7 @@ header .search i {
   color: white;
 }
 .list-container .products .product-container .save {
+  width: 3.8rem;
   font-size: 50px;
   height: 56px;
   font-size: 18px;
@@ -1529,6 +1530,9 @@ header .search i {
   }
 }
 @media (max-width: 768px) {
+  .carousel img {
+    min-height: 350px;
+  }
   .slide img {
     height: calc(100vh - 127.5px);
   }
@@ -1563,7 +1567,7 @@ header .search i {
 }
 @media (max-width: 425px) {
   .slide img {
-    height: calc(100vh - 88px);
+    height: calc(100vh - 56px);
   }
   .carousel .carousel-caption h5 {
     font-size: 30px;
@@ -1602,5 +1606,22 @@ header .search i {
     width: 100% !important;
     margin: auto;
     margin-top: 1rem;
+  }
+  .pattern aside .text h1 {
+    font-size: 32px;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+  }
+  .category .category-item {
+    width: auto;
+  }
+  .pattern-3 i {
+    font-size: 1rem !important;
+    color: white;
+    background-color: #62D0B6;
+    margin: 0.5rem;
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
   }
 }/*# sourceMappingURL=home.css.map */
