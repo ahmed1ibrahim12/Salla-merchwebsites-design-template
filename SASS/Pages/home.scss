@@ -32,6 +32,11 @@
 }
 //Carousel
 .carousel{
+    .carousel-indicators{
+        .active{
+            border: 1px solid transparent !important;
+        }
+    }
     img{
         height: calc(100vh - 156px);
     }
@@ -69,8 +74,8 @@
     }    
     .carousel-indicators {
         button {
-          background-color: transparent !important;
-          border: 1px solid #ccc !important;
+          background-color: transparent;
+          border: 1px solid #ccc;
           width: 14px !important;
           height: 14px !important;
           border-radius: 50%;
