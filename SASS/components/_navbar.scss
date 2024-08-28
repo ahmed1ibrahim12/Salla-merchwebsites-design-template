@@ -151,8 +151,8 @@ header {
             width: 50%;
         }
         a, p{
-            font-size: small !important;
-            margin: 0 0.5rem !important;
+            font-size: small;
+            margin: 0 0.5rem;
         }
         .bottom-header{
             .icon{
@@ -167,8 +167,12 @@ header {
     }
 }
 @media (max-width: 768px){
-    .titls, header .search{
+    header .search{
         display: none !important;
+    }
+    a, p {
+        font-size: x-small !important;
+        margin: 0 0.4rem !important;
     }
 }
 @media (max-width: 425px){

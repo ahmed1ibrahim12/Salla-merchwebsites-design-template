@@ -550,8 +550,8 @@ header .search i {
     width: 50%;
   }
   header a, header p {
-    font-size: small !important;
-    margin: 0 0.5rem !important;
+    font-size: small;
+    margin: 0 0.5rem;
   }
   header .bottom-header .icon p {
     font-size: 8px !important;
@@ -561,8 +561,12 @@ header .search i {
   }
 }
 @media (max-width: 768px) {
-  .titls, header .search {
+  header .search {
     display: none !important;
+  }
+  a, p {
+    font-size: x-small !important;
+    margin: 0 0.4rem !important;
   }
 }
 @media (max-width: 425px) {
@@ -1530,11 +1534,25 @@ header .search i {
   }
 }
 @media (max-width: 768px) {
-  .carousel img {
+  #carouselExampleCaptions img {
     min-height: 350px;
   }
+  .pattern aside .text h1 {
+    font-size: 60px;
+    font-weight: bolder;
+    margin-bottom: 3rem;
+  }
+  .pattern-3 i {
+    font-size: 1.5rem;
+    color: white;
+    background-color: #62D0B6;
+    margin: 0.7rem;
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+  }
   .slide img {
-    height: calc(100vh - 127.5px);
+    height: calc(100vh - 97px);
   }
   .slide img .carousel-caption h5 {
     font-size: 40px;
@@ -1563,6 +1581,9 @@ header .search i {
   .second-banner .banner {
     margin: auto;
     margin-top: 1rem;
+  }
+  .payment .pay {
+    width: auto;
   }
 }
 @media (max-width: 425px) {

@@ -925,11 +925,25 @@
     }
 }
 @media (max-width: 768px){
-    .carousel img{
+    #carouselExampleCaptions img{
         min-height: 350px;
     }
+    .pattern aside .text h1 {
+        font-size: 60px;
+        font-weight: bolder;
+        margin-bottom: 3rem;
+    }
+    .pattern-3 i {
+        font-size: 1.5rem;
+        color: white;
+        background-color: #62D0B6;
+        margin: .7rem;
+        width: fit-content;
+        height: fit-content;
+        text-align: center;
+    }
     .slide img{
-        height: calc(100vh - 127.5px);
+        height: calc(100vh - 97px);
         .carousel-caption{
             h5{
                 font-size: 40px;
@@ -964,6 +978,9 @@
             margin: auto;
             margin-top: 1rem;
         }
+    }
+    .payment .pay{
+        width: auto;
     }
 }
 @media (max-width: 425px) {
