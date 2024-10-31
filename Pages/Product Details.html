@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../SASS/Pages/Product Details.css">
+    <link rel="stylesheet" href="../CSS/Product Details.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.8.0/nouislider.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="../CSS/loading.css">
@@ -29,7 +29,7 @@
           </div>
           <div class="title">
             
-              <img src="../Images/Home Page/flag.png" class="img" width="13px" alt=""> <button onclick="translate()">العربية - رس</button>
+              <img src="Images/Home Page/flag.png" class="img" width="13px" alt=""> <button onclick="translate()">العربية - رس</button>
               <a class="header-title">|</a>
               <a class="header-title">المفضلة</a>
               <a class="header-title">|</a>
@@ -40,91 +40,67 @@
       </div>
       <div class="bottom-header">
           <div class="details">
-            <nav class="navbar">
-              <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                  <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">موقع سلة &nbsp;</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                  </div>
-                  <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">الصفحة الرئسية</a>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          كل المنتجات
-                        </a>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="Categories.html">كل المنتجات</a></li>
-                          <li><a class="dropdown-item" href="Categories.html">كل المنتجات</a></li>
-                        </ul>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          كل المنتجات
-                        </a>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="Categories.html">كل المنتجات</a></li>
-                          <li><a class="dropdown-item" href="Categories.html">كل المنتجات</a></li>
-                        </ul>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          كل المنتجات
-                        </a>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="Categories.html">كل المنتجات</a></li>
-                          <li><a class="dropdown-item" href="Categories.html">كل المنتجات</a></li>
-                        </ul>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          كل المنتجات
-                        </a>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="Categories.html">كل المنتجات</a></li>
-                          <li><a class="dropdown-item" href="Categories.html">كل المنتجات</a></li>
-                        </ul>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          كل المنتجات
-                        </a>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="Categories.html">كل المنتجات</a></li>
-                          <li><a class="dropdown-item" href="Categories.html">كل المنتجات</a></li>
-                        </ul>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          كل المنتجات
-                        </a>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="Categories.html">كل المنتجات</a></li>
-                          <li><a class="dropdown-item" href="Categories.html">كل المنتجات</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                    <form class="d-flex mt-3" role="search">
-                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                      <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </nav>
               <div class="cart-profile">
-                  <a href="../index.html" class="cart"><div class=""><img src="../Images/Home Page/icons8-cart-48.png" alt=""></div><p class="logo-title">متجـــــر<br>سلــــــة</p></a>
+                <nav class="navbar">
+                  <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                      <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                      <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">جميع الأقسام</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                      </div>
+                      <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              موبايلات <i class="fa-solid fa-chevron-down"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="Pages/Categories.html">موبايلات</a></li>
+                              <li><a class="dropdown-item" href="Pages/Categories.html">موبايلات</a></li>
+                            </ul>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              إلكترونيات <i class="fa-solid fa-chevron-down"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="Pages/Categories.html">إلكترونيات</a></li>
+                              <li><a class="dropdown-item" href="Pages/Categories.html">إلكترونيات</a></li>
+                            </ul>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              ساعات رقمية <i class="fa-solid fa-chevron-down"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="Pages/Categories.html">ساعات رقمية</a></li>
+                              <li><a class="dropdown-item" href="Pages/Categories.html">ساعات رقمية</a></li>
+                            </ul>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              إضاءة مكتبية <i class="fa-solid fa-chevron-down"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="Pages/Categories.html">إضاءة مكتبية</a></li>
+                              <li><a class="dropdown-item" href="Pages/Categories.html">إضاءة مكتبية</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                        <button class="btn nav-btn">الرياض</button>
+                        <button class="btn nav-btn"><img src="Images/Home Page/flag.png" class="img" alt="">العربية | ر.س</button>
+                      </div>
+                    </div>
+                  </div>
+                </nav><a href="#" class="cart"><div class=""><img src="../Images/Home Page/icons8-cart-48.png" alt=""></div><p class="logo-title">متجـــــر<br>سلــــــة</p></a>
               </div>
               <div class="search"><i class="fa-solid fa-magnifying-glass"></i> <input type="text" placeholder="ابحث عما تريد" name="" id=""></div>
               <div class="cart-profile">
                   <div class="cart hide"><div class="icon"><i class="fa-regular fa-user"></i></div><p class="icon-title text">مرحبا بك <br><span>تسجيل دخول <i class="fa-solid fa-chevron-up"></i></span></p></div>
-                  <div class="cart hide"><div class="icon"><i class="fa-solid fa-cart-shopping"></i><p>2</p></div><p class="icon-title text"><a href="Cart.html">سلــــــة المشتريات</a><br><span>رس 1,200</span></p></div>
+                  <div class="cart"><div class="icon"><i class="fa-solid fa-cart-shopping"></i><p>2</p></div><p class="icon-title text"><a href="Pages/Cart.html">سلــــــة المشتريات</a><br><span>رس 1,200</span></p></div>
               </div>
           </div>
       </div>
@@ -134,8 +110,8 @@
                 كل المنتجات <i class="fa-solid fa-chevron-down"></i>
             </a>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
-                <li><a class="dropdown-item" href="Categories.html">منتج 1</a></li>
-                <li><a class="dropdown-item" href="Categories.html">منتج 2</a></li>
+                <li><a class="dropdown-item" href="Pages/Categories.html">منتج 1</a></li>
+                <li><a class="dropdown-item" href="Pages/Categories.html">منتج 2</a></li>
             </ul>
         </div>
         <div class="dropdown">
@@ -143,8 +119,8 @@
                 إلكترونيات <i class="fa-solid fa-chevron-down"></i>
             </a>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink2">
-                <li><a class="dropdown-item" href="Categories.html">إلكترونيات 1</a></li>
-                <li><a class="dropdown-item" href="Categories.html">إلكترونيات 2</a></li>
+                <li><a class="dropdown-item" href="Pages/Categories.html">إلكترونيات 1</a></li>
+                <li><a class="dropdown-item" href="Pages/Categories.html">إلكترونيات 2</a></li>
             </ul>
         </div>
         <div class="dropdown">
@@ -152,8 +128,8 @@
                 موبايلات <i class="fa-solid fa-chevron-down"></i>
             </a>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink3">
-                <li><a class="dropdown-item" href="Categories.html">موبايل 1</a></li>
-                <li><a class="dropdown-item" href="Categories.html">موبايل 2</a></li>
+                <li><a class="dropdown-item" href="Pages/Categories.html">موبايل 1</a></li>
+                <li><a class="dropdown-item" href="Pages/Categories.html">موبايل 2</a></li>
             </ul>
         </div>
         <div class="dropdown">
@@ -161,8 +137,8 @@
                 كاميرات مراقبة <i class="fa-solid fa-chevron-down"></i>
             </a>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink4">
-                <li><a class="dropdown-item" href="Categories.html">كاميرات مراقبة 1</a></li>
-                <li><a class="dropdown-item" href="Categories.html">كاميرات مراقبة 2</a></li>
+                <li><a class="dropdown-item" href="Pages/Categories.html">كاميرات مراقبة 1</a></li>
+                <li><a class="dropdown-item" href="Pages/Categories.html">كاميرات مراقبة 2</a></li>
             </ul>
         </div>
         <div class="dropdown">
@@ -170,8 +146,8 @@
                 سماعات رقمية <i class="fa-solid fa-chevron-down"></i>
             </a>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink5">
-                <li><a class="dropdown-item" href="Categories.html">سماعات رقمية 1</a></li>
-                <li><a class="dropdown-item" href="Categories.html">سماعات رقمية 2</a></li>
+                <li><a class="dropdown-item" href="Pages/Categories.html">سماعات رقمية 1</a></li>
+                <li><a class="dropdown-item" href="Pages/Categories.html">سماعات رقمية 2</a></li>
             </ul>
         </div>
         <div class="dropdown">
@@ -179,8 +155,8 @@
                 كاميرات رقمية <i class="fa-solid fa-chevron-down"></i>
             </a>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink6">
-                <li><a class="dropdown-item" href="Categories.html">كاميرات رقمية 1</a></li>
-                <li><a class="dropdown-item" href="Categories.html">كاميرات رقمية 2</a></li>
+                <li><a class="dropdown-item" href="Pages/Categories.html">كاميرات رقمية 1</a></li>
+                <li><a class="dropdown-item" href="Pages/Categories.html">كاميرات رقمية 2</a></li>
             </ul>
         </div>
         <div class="dropdown">
@@ -188,8 +164,8 @@
                 أكسسوارات <i class="fa-solid fa-chevron-down"></i>
             </a>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink7">
-                <li><a class="dropdown-item" href="Categories.html">أكسسوارات 1</a></li>
-                <li><a class="dropdown-item" href="Categories.html">أكسسوارات 2</a></li>
+                <li><a class="dropdown-item" href="Pages/Categories.html">أكسسوارات 1</a></li>
+                <li><a class="dropdown-item" href="Pages/Categories.html">أكسسوارات 2</a></li>
             </ul>
         </div>
         <div class="dropdown">
@@ -197,8 +173,8 @@
                 شاشات كمبيوتر <i class="fa-solid fa-chevron-down"></i>
             </a>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink8">
-                <li><a class="dropdown-item" href="Categories.html">شاشات كمبيوتر 1</a></li>
-                <li><a class="dropdown-item" href="Categories.html">شاشات كمبيوتر 2</a></li>
+                <li><a class="dropdown-item" href="Pages/Categories.html">شاشات كمبيوتر 1</a></li>
+                <li><a class="dropdown-item" href="Pages/Categories.html">شاشات كمبيوتر 2</a></li>
             </ul>
         </div>
         <div class="dropdown">
@@ -206,8 +182,8 @@
                 إلكترونيات <i class="fa-solid fa-chevron-down"></i>
             </a>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink9">
-                <li><a class="dropdown-item" href="Categories.html">إلكترونيات 1</a></li>
-                <li><a class="dropdown-item" href="Categories.html">إلكترونيات 2</a></li>
+                <li><a class="dropdown-item" href="Pages/Categories.html">إلكترونيات 1</a></li>
+                <li><a class="dropdown-item" href="Pages/Categories.html">إلكترونيات 2</a></li>
             </ul>
         </div>
         <div class="dropdown">
@@ -215,10 +191,11 @@
                 سماعات <i class="fa-solid fa-chevron-down"></i>
             </a>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink10">
-                <li><a class="dropdown-item" href="Categories.html">سماعات 1</a></li>
-                <li><a class="dropdown-item" href="Categories.html">سماعات 2</a></li>
+                <li><a class="dropdown-item" href="Pages/Categories.html">سماعات 1</a></li>
+                <li><a class="dropdown-item" href="Pages/Categories.html">سماعات 2</a></li>
             </ul>
         </div>
+        <div class="search d-none"><i class="fa-solid fa-magnifying-glass"></i> <input type="text" placeholder="ابحث عما تريد" name="" id=""></div>
     </div>
   </header>
     
@@ -537,13 +514,14 @@
       <div class="bottom-footer">
         <div class="copyright">الحقوق محفوظة لمنصة سلة © 2023</div>
         <div class="imgs">
-          <div class="vat"><img src="https://s3-alpha-sig.figma.com/img/d8c5/bfae/6f0c1b6cdb7faa0e955b7c2d7a8f6df4?Expires=1725840000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=aiGxmwVWvCx6giysDaaOXdKfZeaBmAsvHNGLza8Hg3wP4Ew0LIUaj0A5tKZGhDU1YsswPHg0CXMSdAtPKgt98T8p7hgB~fvi6gmwLrMjCS966DoghHELWRtZYJTcoTrVryZb5WNY2azJ7cmz4if07x-c3V5FBkThGP~xbr1nzjOlQeSCEZiTJsego7QSC~bREF71DeothzLZZU44iCqy7vTsuoAmVjDGe0ZjGEhdQtwf05x3dUzrhGgyVvwQT3ep0cWpDpqsql8GnFNmnrnDC1awAALOJ7KZmYyORWWYJFQCZTwExrj39p37PBpRu2dfm3ONdLdnry8efI7XnuIiBQ__" alt=""><p>الرقم الضريبى : 546987552</p></div>
+          <div class="vat vat1"><img src="../Images/Home Page/vat.jpg" alt=""><p>الرقم الضريبى : 546987552</p></div>
           <div class="payment">
-            <div><img src="https://s3-alpha-sig.figma.com/img/a85e/315d/1fc681b820f30a9fc23952fedcaf6419?Expires=1725840000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=bqWkKu~O~dzvBusMIDFYutzam1rmo1j5plsXP3oJN7SjcMBahGoJ9CerjLbCy3AbRDWRhrbMseO5l4Y4-5Vd9P0QuYEnAC8ePP7hc16YL0ZqEXmeqtphEKk9JZ9j~o0XHXPLQnxNNwHtXIGSrgBYsaK1mI0miZ9WYDnn5RILDJfq-gX4dYsyl3BN~f2sMJmdLTi7Rq~IS3gS8I9ck2Q9JYPAAE~BcxsANeKCwuKC0CVcv3a97DH8dQFKfGhn1Il2EIK91IqUjPXKncFbvA8rvBHRAU-gndLNpdlpLWHNJNl1MqudCGzSaIZeiuFylwBoWALp0NHmkXyFSUW1GdgCDg__" alt=""></div>
-            <div><img src="https://s3-alpha-sig.figma.com/img/3ebc/f58d/6f85eb2ada37eb07859f25164c3c7264?Expires=1725840000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=EE29Cd08x5V9JGc1O8gnmZYmZoSBeb0~FiWMLQwKATByFkdtHoMzqVLqtvuIvyU2BReMkj77-OgaG10ouDNBppkhar-VKiV0fu4pbMIcugfObjB6f59p-Y1r6zjERHlQ5tgmoVyZv~f7mM166sqrq-sEHM2cr~eG5waaPVpPXp4tARPL-a4tMiB3Fbrt6uKr8PfQ2eFk-6aJdiwj-g~sWh3WQYHOsgYB8~J4RDHgXwNsiIlr1eCqKboUDUauIVvWe78FbK2ji5quUlpW6~Wc1LonH5ihi56T6DWMTeLFg0M8GarlicsIPHGjalchNpQMIaRj3DROIZF1Y0DlvovC2Q__" alt=""></div>
-            <div><img src="https://s3-alpha-sig.figma.com/img/30b2/89b9/0bc206396168a2af91aefc5909e86eff?Expires=1725840000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ag~Z3S8T-VBaznbohiQkpfN8iIsnvmjzc5fqygInUvOprgPI9AWIpA6oAe~jjx9fYydt-WkYlaH2t-hknE2qKKQlXujEkq2KkhhxaKbenlA7Bimrtk9F7ND-ncMwiPJ8JEVN0Si1LZIj8n-UcgnH5jGsxUsjg5cX-1JG6ULI4HoU9m8RTIshDG2Ml87lX3D3WFtfUY6uBFkF7oqLHJcof~hMxbo5LlfUlqsUlv3LURt3YVTB72ksAsaP85gjD-EAcqZRu4baoHLljUZZkHwMB4V7OeP256Rc6PjCZSGUqDYtYlt-4Ksiayi5qSDwCAGQgw8Pyr9XG3W7y0rj0T3i3A__" alt=""></div>
-            <div><img src="https://s3-alpha-sig.figma.com/img/3ece/0687/e503b99cf8c16c9765b5d41af8da2e6e?Expires=1725840000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=eNw2Zq2gLsZAx~ebqNTGNdcG3vmKzl4gCfgJsn-yEF8wWn0XPKhxzWvIh4SSPysJ8GGU2BwxHR6~efylQuSKHojzHoZJBBNyy0mPnIoblr8s3Dwrus48GSc23W758gCPLeUERAmW4zNhhRI18k6jr5bObBPk7DpGQwG0nKiIevs4lDxT7VTxd4G8j~u3-ods737uhiabr26dJI71G4QTsk-TKnYxmBbUTYKTrz8wI8hNBaHhG6qhfJ~~Ev8R2k0szhnBJacm5V9CGxZrFhUfXtn7Fadep-R6jld6prScqoePEb2eJIkQw8UMA1uUp-iCbFIcyr6YzgCsSmPQa~4ccA__" alt=""></div>
+            <div><img src="../Images/Home Page/visa.png" alt=""></div>
+            <div><img src="../Images/Home Page/master-card.png" alt=""></div>
+            <div><img src="../Images/Home Page/Paypal.png" alt=""></div>
+            <div><img src="../Images/Home Page/mada.png" alt=""></div>
           </div>
+          <div class="vat vat2 d-none"><img src="../Images/Home Page/vat.jpg" alt=""><p>الرقم الضريبى : 546987552</p></div>
         </div>
       </div>
     </footer>

@@ -28,6 +28,7 @@
     span{
         font-size: 16px;
         font-weight: bold;
+        color: #666666;
     }
 }
 //Carousel
@@ -59,6 +60,7 @@
             width: 200px;
             height: 56px;
             font-size: 16px;
+            font-weight: bold;
             font-weight: 500px;
             transition: 0.6s;
         }
@@ -131,6 +133,7 @@
             @include flex;
             cursor: pointer;
             border-left: 1px solid #EEEEEE;
+            flex-wrap: nowrap;
             i {
                 font-size: xx-large;
             }
@@ -164,16 +167,15 @@
             }
         }
         .banner1{
-            background-image: url("https://s3-alpha-sig.figma.com/img/3166/84d7/153c74b62a7e4d8421adc39ff1979b39?Expires=1725840000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=cZ4s4L04QMdwOC5VeRIul6rOPeMBAcK7IORNDTp-xVk0BOOniAJWU247o04VO7tPIX-261dZaapLmC2FuJ2wdVPMcG9DgUEwbl2It1avNsEWbL5vUwvR3~oew3gEua0Uc5A419rlyELRFmgDr2Co7o8mIitpMAv4ANQjZMXTgK5Tono3pxOvjW0Hm3GJg2~41lFi0J1Q0jaxnG8OrxLbuZ9aa9hI6yzQQTVhF8QXc3KndO6RM1iT6RuKfexad6pynx6tpMhzKkTNbPArl4Yu~AlLAVf03o3rZEJdQ25itbOvJOYIkxMxgGRMpxht4BwTRIOy3XPqNFG1QlJmxndZ~Q__");
+            background-image: url("../../Images/Home Page/Image1.png");
         }
         .banner2{
-            background-image: url("https://s3-alpha-sig.figma.com/img/e6f7/b831/edf15ab31145fd126d306d3c0e867293?Expires=1725840000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=bFjuu0~aTM2YOUI30xmeHStyAfss5AJfkKEdretG~XkKgiN~OMQXw054wJDT6CjetmRdDjo9qFvMHbTveBgu2Oz4xTtpUKUj0Q28WVelvXV0EWOhxQpqJEWNCqxRHdb1eOT4ki59h8GNtNcb7RMmWGTEz089g34zrNTX2J9tUgfGaTa7-a3fKWWEQwQidZckB~ASNUzWwTnUiZrdCxYqy3Pc-xiAJY7jzc0uLfdKX9cr9WC3S0BITxGTe-KztMlT5rLVYE811aZ-j3j52oa5nxMXcBONKmDxQQF3Qquv1O4CfAPfHtbwTd-f8nuvqt-PEOP3~iFnnQmw1p6DYIty5g__");
+            background-image: url("../../Images/Home Page/Image2.png");
         }
     }
     .products{
         margin: 3rem 0;
         .main-products{
-            @include flex;
             justify-content: space-between;
             margin: 1rem 0;
             position: relative;
@@ -253,12 +255,15 @@
 
 //pattern
 .pattern{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://s3-alpha-sig.figma.com/img/31cb/df21/bd606de6104285953885e8ed3963ded4?Expires=1725840000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=bfWzHUj~MFPXIycq~h~jONw-YhpX1Y7LEbVw-F-K4Ldi~2yB0XCs6r579pjzqTz-wjTFEkcBXSCnQBIjv26Clm5WkssIH5vHOeiB5kA8qtp6XYL1tGx2biv~VbrkMHYhlWHZno-7hGoxOSw~sueYz4XO30WhVgTyJxFypYiM1q~eu2zjGTOS1KfedEc1~d3P8TM9Dxmar4EFCm4WXQqkxXa12v5mmEIN5cbH1xK5meuxvUmqva5cmlpYdGGNxMnRYq4klEdNqNTERfQkkkDvd2a5ray3uonzKsmqvkEkpgwH0sB-wB1XmKEgirCIIBSdmBA2ia9lERwzuC~0xdi-qg__");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../Images/Home Page/image-8.png");
     padding: 3rem 0;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     @include flex;
+    img{
+        padding: 2rem;
+    }
     aside{
         display: inline-block;
         .img{
@@ -275,7 +280,6 @@
             }
             p{
                 font-size: 16px;
-                font-weight: bold;
                 margin-bottom: 2rem;
             }
             .btn{
@@ -302,6 +306,9 @@
 
 //category
 .category{
+    .con{
+        display: none !important;
+    }
     .items{
         @include flex;
         justify-content: space-between;
@@ -389,18 +396,18 @@
     }
     .banners1{
         .banner1{
-            background-image: url("https://s3-alpha-sig.figma.com/img/d20d/f7cd/927169b24afd7b1b93c5b2414959346a?Expires=1725840000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=fXd1eqPZCpF6TlV1PKGAZSJk17yTLayLuCBMIPh6iREV1aHKbhHoW0t6ODx-kdgA0NzFjRuutfoFVU1TkA9-~ar2LP60eNKU7x5-HLcHk~5ltfjx68fTS0H4IJQZ50hoFtOQvHsTy6FY3UtiFw1rtwSB7KQGB7R1kWnA~D7lSxPkUWCVNzmfFdP5eC2FUSpDycP~~jE6LfKzSz-emles23et8tyXKNcVGyQVtRB4ocjNGnmnAe3mC9cJU0N1cfxJ-D2bx70jNkc55J0i1aYRcBGzkHQFQMTWwl-39CuKbBpEUYs3CUx1k9XvL4BhRj7Pu~YJ6yU9RCw079T9vHbz~Q__");
+            background-image: url("../../Images/Home Page/banner-cms-06.png");
         }
         .banner2{
-            background-image: url("https://s3-alpha-sig.figma.com/img/8845/465a/d594249de448d0d9d1081e42a5edc57b?Expires=1725840000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ebwyqysTsns3DOwPVOsM0zgtAi4o8L~RijkGSWrdeSORtPFHUq8ydFWn7rDA1xgZgEhse5tAtII374cb0Ct6x4tY2CmI7OU6jAWEcZHPQKNSar3LsyldiNhTspSQif-uqW22qgGky539-Ur7aAwmjW3~9bTnw08Mt99xDxZ12WfrSzxiWV0ecIJLFN7E0eQHshtwRRlIwSQTnCVt0ZGslr8izc3rCbSKq45euhuExVp2iWFiLaWYymAzch4vMvoDoiG7AvY0tM7aUe-frbKojEJxssVpBuv5d8aZ9Td6q3Upk9j8Nr5RVecZTtgamb0cqxmlOasorIVX4p1nz48tdw__");
+            background-image: url("../../Images/Home Page/banner-cms-05.png");
             @extend .banner1;
         }
         .banner3{
-            background-image: url("https://s3-alpha-sig.figma.com/img/5e01/f54b/04b169783b2993eeb84d444420f19fc3?Expires=1725840000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Yo0aE~jY2BZ6IIPYHpmdz6WeZlUSBzi0ytgLlLDRSoxLSVfPye3H2myxK4Z4QTMUoJxnOIkSnquZbzIeHQE~FKrtelgOvd~y3Ed~ttO0krawtPd8Ft5O1WLejV7f94deWv4Xwc6FSkZGGCzcUYX9ot8UX47deamTuDOc6KJSCUwBKQ7nnlZnBBzYO9RSJBrotVeaq39aGC8nvheNsbGQfK3Q35VvWoG6vVn9vxLTJIHKS1Tcp~pWGmXwfZ5LcbAM2SAT1SRWM64SLLyr3B9Thsn9Xhx8dvdEQbyrg~KlXefy4umy7HxktUrBv2VlN-7JDYP2qlDGWYK4pVgvm18qBA__");
+            background-image: url("../../Images/Home Page/banner-cms-056.png");
             @extend .banner1;
         }
         .banner4{
-            background-image: url("https://s3-alpha-sig.figma.com/img/b09e/4825/a7b350293af3b1f7f955eaebb0562364?Expires=1725840000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=T7eutr3fdm7r6CxFbgSn8x4ghOTxU8~6~b3d2-whnAS6lszusZhcJOCO-52av9lDStfJq42s1wK~aGTGYhYBzbZePQ8paDUz5iBbSbhksQkfUTLtYac48tT1ROAM1~DTM28aCxVFzCRkmpHm3DbmnCafbgGVRfMayspAEKoTp7b8xxENNYJ6OW9evjmSSsqSIry~N4Z2fb3Fr2oVdfP-xGsgdSWMLM5JOz6dD84yl6I9IaK1L~fva4czQ8b4l4p98JRsI5trXrZWLXH0vowYVXBdao46pD-Uh8tgnjAGQLrsHvBK8YeZqnD-6-C4IndF32ykIgvtvOWPoeVp-DB~Yg__");
+            background-image: url("../../Images/Home Page/banner-cms-08.png");
             @extend .banner1;
             width: 100%;
             .content{
@@ -666,7 +673,7 @@
 
 //pattern-3
 .pattern-3{
-    background-image: url("https://s3-alpha-sig.figma.com/img/dd4a/ca0c/04ee959688f403dde6c69ca3dce65d79?Expires=1725840000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ZLh8H-D-~b8RntBMjN6BS3j0XYyJwwsAeek4Yml8UtShy1QWpbFkZdps15LTti0yDKeyD5pCZSoyLwQxQ4tc1FI6VzNtlzbFk139oDF~aizz8eB-2SplRRiM7dD1Q-4ap0i1knBeqIuylda-n7nMvoS4m-UrHZxU6JF3JyOrZ--idK6SM~HXIy99MFiuKiUUnuPMDehbjkZMbUb6TUXGmavOtUf7GPzh790aLPqNyW9X52u10JddCWXyNSHpRxsmxV2UCMXreRPu9RJQRSx4FRCrVxraGv7nM~gxut9KSUht9pzINgwlYW7OKGEEmzs64djM2W-pEdeQFcJr~v6n6g__");
+    background-image: url("../../Images/Home Page/video.png");
     height: 594.688px;
     display: flex;
     justify-content: center;
@@ -761,7 +768,6 @@
             .subtitle{
                 font-size: 16px;
                 font-weight: bold;
-                color: #666666
             }
         }
     }
@@ -859,9 +865,6 @@
 @media (max-width: 1024px){
     .carousel .carousel-caption {
         top: 40%;
-    }
-    .cart{
-        border: none !important;
     }
     .carousel img{
         height: calc(100vh - 133.5px);
@@ -985,7 +988,10 @@
 }
 @media (max-width: 425px) {
     .slide img{
-        height: calc(100vh - 56px);
+        height: calc(100vh - 127px);
+    }
+    #carouselExampleCaptions img{
+        height: 500px !important;
     }
     .carousel .carousel-caption {
         h5{
@@ -993,10 +999,6 @@
         }
         p{
             font-size: 11px;
-        }
-        button{
-            width: 125px !important;
-            height: auto !important;
         }
     }
     .carousel .border {
@@ -1008,21 +1010,21 @@
     .list-container .banner-container .banner {
         width: 100%;
     }
-    .products{
-        .card{
-            width: auto !important;
-            margin: auto;
+    .card{
+        width: 49% !important;
+        img{
+            height: 157px !important;
         }
+    }
+    .category .items{
+        flex-wrap: nowrap !important;
+    }
+    #carouselExampleAutoplaying4{
+        overflow-x: scroll;
     }
     .main-banner{
         .banner{
             width: 100% !important;
-        }
-    }
-    .product-container{
-        .card{
-            width: 100%;
-            margin: auto;
         }
     }
     .blog .blog-card {
@@ -1038,8 +1040,11 @@
         font-weight: bolder;
         margin-bottom: 1rem;
     }
-    .category .category-item{
-        width: auto;
+    .category-item{
+        width: auto !important;
+    }
+    .img-fluid{
+        max-width: max-content !important;
     }
     .pattern-3 i {
         font-size: 1rem !important;
@@ -1049,5 +1054,110 @@
         width: fit-content;
         height: fit-content;
         text-align: center;
+    }
+    .add{
+        width: 114px !important;
+        font-size: 15px !important;
+    }
+    .save{
+        width: 44px !important;
+    }
+    .time{
+        margin: 0.4rem !important;
+        padding: 0 1rem !important;
+    }
+    .products .content .card-product .buttons {
+        margin-top: 1rem 0 !important;
+        display: inline-flex;
+    }
+    .section-title{
+        font-size: 20px !important;
+        span{
+            font-size: 14px !important;
+        }
+    }
+    .second-banner{
+        padding: 0 !important;
+        margin: 1rem;
+    }
+    .top1{
+        h5{
+            font-size: 45px !important;
+        }
+        p{
+            font-size: 18px !important;
+        }
+    }
+    .carousel-control-prev, .carousel-control-next{
+        display: none !important;
+    }
+    .carousel-caption{
+        width: 90% !important;
+        right: 5% !important;
+        left: 5% !important;
+    }
+    .payment{
+        padding: 0.5rem;
+        .pay{
+            margin: 0 !important;
+        }
+        .cart{
+            border-bottom: 1px solid #EEEEEE;
+        }
+    }
+    .list-container{
+        .banner-container{
+            .banner{
+                height: auto !important;
+                    .content{
+                        p{
+                            font-size: 12px !important;
+                        }
+                        h1{
+                            font-size: large !important;
+                        }
+                    }
+                }
+            }
+    }
+    .category{
+        .con1{
+            display: none !important;
+        }
+        .con{
+            display: flex !important;
+        }
+    }
+    .products{
+        width: 100%;
+        .time-container{
+            justify-content: space-around !important;
+        }
+        .buttons{
+            .add{
+                width: 302px !important;
+                margin-left: 0.5rem;
+            }
+            .save{
+                width: 50px !important;
+            }
+        }
+    }
+    .second-banner{
+        .banner{
+            width: 90% !important;
+        }
+    }
+    .pattern-3{
+        margin: 0.5rem;
+        border-radius: 8px;
+    }
+    .bran-container{
+        .brand{
+            width: 30% !important;
+        }
+    }
+    .joy{
+        display: none !important;
     }
 }

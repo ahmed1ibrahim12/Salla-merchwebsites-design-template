@@ -151,6 +151,10 @@ body {
     }
 }
 
+.offcanvas-header2, .offcanvas-body2{
+    display: flex !important;
+}
+
 //sorting system
 .products {
     @include flex;
@@ -159,20 +163,16 @@ body {
     &.grid-view {
         @include flex;
         justify-content: space-between;
-
         .product {
             width: 282px !important;
             display: block !important;
         }
-
         .add {
             width: 180px !important;
         }
-
         .title {
             font-size: 16px;
         }
-
         .subtitle {
             font-size: 15px;
 
@@ -180,39 +180,168 @@ body {
                 font-size: 14px;
             }
         }
-
         .rating {
             display: none;
         }
+        @media (max-width: 425px) {
+            .product{
+                .text {
+                    margin: 0 !important;
+                }
+                .add {
+                    width: 114px !important;
+                    font-size: 13px !important;
+                }
+                .save {
+                    width: 44px !important;
+                }
+                .title {
+                    font-size: 18px !important;
+                    font-weight: bolder;
+                }
+                .subtitle { // corrected from substitle
+                    font-size: 16px !important;
+                    font-weight: bold;
+                    color: #666666;
+                    span {
+                        font-size: 14px !important;
+                    }
+                }
+            }
+        }
     }
-
     &.list-view {
-        display: block;
+        display: flex;
         justify-content: space-between;
-
         .product {
             width: 100%;
         }
-
         .title {
             font-size: 14px;
         }
-
         .subtitle {
             font-size: 18px;
-
+    
             span {
                 font-size: 16px;
             }
         }
-
         .rating {
             display: block;
         }
+        @media(max-width: 425px){
+            .product{
+                padding: 1rem 0 !important;
+                .image{
+                    width: 150px !important;
+                    img{
+                        width: 150px !important;
+                    }
+                }
+                .text{
+                    p{
+                        margin: 0.5rem !important;
+                    }
+                    .title{
+                        font-size: 13px !important;
+                    }
+                    .substitle{
+                        font-size: 15px;
+                        span{
+                            font-size: 13px;
+                        }
+                    }
+                    .add{
+                        width: 180px !important;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+.sidenav{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    .btn-close{
+        right: 80%;
+        opacity: 1 !important;
+    }
+    .content-container{
+        display: flex;
+        height: 100vh;
+    }
+    .reset-button{
+        width: 90%;
+        margin: 5%;
+    }
+    .fade-div{
+        background-color: rgba(0, 0, 0, 0.700);
+        width: 20%;
+        height: 100%;
+    }
+    .content{
+        background-color: white;
+        top: 0;
+        right: 0;
+        width: 80%;
+        height: 100%;
+        .sidenav-title{
+            font-size: 16px !important;
+            width: 100%;
+            font-weight: bolder;
+            margin: 0 !important;
+            padding: 1rem;
+            border-bottom: 1px solid #EEEEEE;
+        }
+    }
+    .dropdown-container{
+        margin: 1rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid #EEEEEE;
+        .type{
+            .drop{
+                @include flex;
+                justify-content: space-between;
+                cursor: pointer;
+                width: 100%;
+                background-color: transparent;
+                border: none;
+                outline: none;
+                font-weight: bold !important;
+                i{
+                    color: $icons-color;
+                }
+                p{
+                    font-size: 16px !important;
+                }
+            }
+        }
+        .filter-type{
+            display: none;
+            label{
+                display: flex;
+                input{
+                    margin-left: 0.5rem;
+                }
+            }
+            label, a{
+                font-size: 14px;
+                font-weight: bold;
+            }
+            .input{
+                @include flex;
+                justify-content: space-between;
+                margin-bottom: 0.5rem;
+                font-size: 14px;
+                color: #666666;
+            }
+        }
     }
 }
-
-
 //filter
 .div-2{
     width: 290px;
@@ -280,14 +409,59 @@ body {
     .products.grid-view {
         justify-content: center;
     }
-    .products{
-        justify-content: center !important;
-        .product{
-            display: block !important;
-            width: auto !important;
+    .active-sidenav{
+        display: block !important;
+    }
+    .product{
+        .text {
+            margin: 0 !important;
+        }
+        .add {
+            width: 114px !important;
+            font-size: 13px !important;
+        }
+        .save {
+            width: 44px !important;
+        }
+        .title {
+            font-size: 18px !important;
+            font-weight: bolder;
+        }
+        .subtitle { // corrected from substitle
+            font-size: 16px !important;
+            font-weight: bold;
+            color: #666666;
+            span {
+                font-size: 14px !important;
+            }
         }
     }
     .hide{
         display: block !important;
+    }
+    .div-2{
+        display: none !important;
+    }
+    .text{
+        margin: 0 !important;
+    }
+    .add{
+        width: 114px !important;
+        font-size: 13px !important;
+    }
+    .save{
+        width: 44px !important;
+    }
+    .title{
+        font-size: 18px !important;
+        font-weight: bolder;
+    }
+    .substitle{
+        font-size: 16px !important;
+        font-weight: bold;
+        color: #666666;
+        span{
+            font-size: 14px !important;
+        }
     }
 }

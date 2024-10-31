@@ -85,6 +85,20 @@ header {
                 }
             }
         }
+        .search{
+            width: 696px;
+            position: relative;
+            input{
+                width: 100%;
+                height: 46px;
+                padding: 0.5rem;
+            }
+            i{
+                position: absolute;
+                left: 10px;
+                top: 35%;
+            }
+        }
     }
     .titls {
         background-color: $bg-color;
@@ -111,30 +125,72 @@ header {
             }
         }
     }
-    .search {
-        position: relative;
-        width: 696px;
-        height: 48px;
-        @include flex;
-    
-        input {
-            width: 100%;
-            height: 100%;
-            padding: 1rem;
-        }
-    
-        i {
-            position: absolute;
-            left: 0;
-            padding: 0 1rem;
-            color: $third-text-color;
-        }
-    }
     
 }
-
+.btn-close{
+    position: absolute;
+    top: 1rem;
+    left: -2rem;
+    background-color: #F55157 !important;
+    --bs-btn-close-bg: url("https://img.icons8.com/ios-filled/50/FFFFFF/delete-sign--v1.png") !important;
+    border-radius: 50% 0 0 50% !important;
+    opacity: 1 !important;
+}
 .navbar{
     display: none !important;
+    position: relative;
+    .dropdown-menu{
+        margin: 0;
+        padding: 0;
+        border: none;
+    }
+    .nav-btn{
+        color: black !important;
+        background-color: #F8F8F8 !important;
+        width: 49%;
+        font-size: 14px !important;
+        font-weight: bold;
+        border: 0;
+        opacity: 0.7;
+        &:hover{
+            opacity: 1 !important;
+        }
+        img{
+            width: 15px !important;
+            height: 15px !important;
+            margin: 0 !important;
+        }
+    }
+    .offcanvas-header{
+        border-bottom: 1px solid #EEEEEE;
+    }
+    .offcanvas-title{
+        font-size: 16px !important;
+        font-weight: bold;
+    }
+    .show{
+        color: #62D0B6 !important;
+    }
+    .offcanvas-body{
+        padding: 0.5rem;
+    }
+    .pe-3{
+        padding: 0 !important;
+        font-size: 14px !important;
+        font-weight: bold;
+        color: black;
+    }
+    .nav-link{
+        display: flex;
+        justify-content: space-between;
+    }
+    .dropdown-item{
+        width: 0;
+        padding-top: 0.5rem;
+        padding: 0;
+        padding-top: 0.5rem;
+        font-size: 14px;
+    }
     .offcanvas {
         height: 100%;
         right: 0;
@@ -142,8 +198,22 @@ header {
         padding: 0;
         max-width: 90%;
     }
+    .navbar-toggler{
+        padding: 0 !important;
+        border: none !important;
+        box-shadow: none !important;
+        width: fit-content !important;
+        height: fit-content !important;
+        color: #62D0B6;
+    }
+    .container-fluid{
+        padding: 0 !important;
+        margin: 0;
+    }
+    .offcanvas.offcanvas-end{
+        width: 240px;
+    }
 }
-
 
 @media (max-width: 1024px){
     header{
@@ -167,12 +237,22 @@ header {
     }
 }
 @media (max-width: 768px){
-    header .search{
-        display: none !important;
+    header {
+        .bottom-header{
+            .search{
+                display: none !important;
+            }
+        }
+        a, p {
+            font-size: x-small !important;
+            margin: 0 0.4rem !important;
+        }
     }
-    a, p {
-        font-size: x-small !important;
-        margin: 0 0.4rem !important;
+    nav{
+        a, p {
+            font-size: x-small !important;
+            margin: 0 0.4rem !important;
+        }
     }
 }
 @media (max-width: 425px){
@@ -190,9 +270,37 @@ header {
             }
         }
     }
-    header{
-        .top-header{
-            display: none;
+    .top-header{
+        .title{
+            display: none !important;
+        }
+        padding: 0.5rem;
+    }
+    .titls{
+        background-color: white !important;
+        .dropdown{
+            display: none !important;
+        }
+        .search{
+            display: block !important;
+            width: 100%;
+            position: relative;
+            input{
+                width: 100%;
+                height: 46px;
+                padding: 0.5rem;
+                border: 1px solid #EEEEEE !important;
+            }
+            i{
+                position: absolute;
+                left: 10px;
+                top: 35%;
+            }
+        }
+    }
+    .hide{
+        .icon-title{
+            display: none !important;
         }
     }
 }

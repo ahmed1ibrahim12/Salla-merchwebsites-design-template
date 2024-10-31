@@ -129,3 +129,30 @@
         width: 100%;
     }
 }
+
+@media (max-width: 425px) {
+    .btn-close1{
+        display: block !important;
+    }
+    .cart-container .products .title{
+        font-size: 12px !important;
+    }
+    .cart-container{
+        input{
+        width: 303px;
+        }
+        .counter-1 ,.price{
+            display: none !important;
+        }
+        .new-counter{
+            display: flex !important;
+            justify-content: space-between;
+            width: 100%;
+            border-top: 1px solid #EEEEEE;
+            padding-top: 1rem;
+            .counter-2 ,.price2{
+                display: flex !important;
+            }
+        }
+    }
+}

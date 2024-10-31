@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../SASS/Pages/Categories.css">
+    <link rel="stylesheet" href="../CSS/Categories.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.8.0/nouislider.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="../CSS/loading.css">
@@ -20,6 +20,86 @@
   </div>
   <div id="content" style="display: none;">
     <!--header-->
+    <nav class="sidenav">
+        <button type="button" class="btn-close" aria-label="Close"></button>
+        <div class="content-container">
+            <div class="content">
+                <p class="sidenav-title">فلترة المنتجات</p>
+                <div class="filter">
+                    <div class="dropdown-container">
+                        <div class="type"><button class="drop" data-target="filter1-1"><p>الفئة</p><i class="fa-solid fa-chevron-down"></i></button></div>
+                        <div class="filter-type" id="filter1-1">
+                            <div class="input"><label><input type="radio" name="color"> الكل</label>(100)</div>
+                            <div class="input"><label><input type="radio" name="color"> الإلكترونيات والموبايلات</label>(90)</div>
+                            <div class="input"><label><input type="radio" name="color"> التلفزيونات والشاشات</label>(80)</div>
+                            <div class="input"><label><input type="radio" name="color"> سماعات أذن</label>(70)</div>
+                            <div class="input"><label><input type="radio" name="color"> كاميرات ديجتال</label>(60)</div>
+                            <div class="input"><label><input type="radio" name="color"> مكبرات صوت</label>(50)</div>
+                            <a href="#" style="color: #62D0B6;" class="show-more-link">عرض المزيد</a>
+                        </div>
+                    </div>
+                    <div class="dropdown-container">
+                        <div class="type"><button class="drop" data-target="filter2-2"><p>الماركة</p><i class="fa-solid fa-chevron-down"></i></button></div>
+                        <div class="filter-type" id="filter2-2">
+                            <div class="input"><label><input type="radio" name="color"> الكل</label>(100)</div>
+                            <div class="input"><label><input type="radio" name="color">إتش بي</label>(90)</div>
+                            <div class="input"><label><input type="radio" name="color"> أبل</label>(80)</div>
+                            <div class="input"><label><input type="radio" name="color"> سامسونج</label>(70)</div>
+                            <div class="input"><label><input type="radio" name="color"> ديل</label>(60)</div>
+                            <div class="input"><label><input type="radio" name="color">لينوفو</label>(50)</div>
+                            <a href="#" style="color: #62D0B6;" class="show-more-link">عرض المزيد</a>
+                        </div>
+                    </div>
+                    <div class="dropdown-container">
+                        <div class="type">
+                            <button class="drop" data-target="filter3-3">
+                                <p>السعر</p>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </button><br>
+                        </div>
+                        <div class="filter-type" id="filter3-3">
+                            <div class="input">
+                                <div id="range-slider">
+                                    <input type="range" id="slider-2" min="100" max="10000" value="100" oninput="slideTwo()">
+                                    <input type="range" id="slider-1" min="100" max="10000" value="1000" oninput="slideOne()">
+                                    <div class="slider-track"></div>
+                                    <div class="output">
+                                        <!-- Number inputs for direct editing -->
+                                        <label>من<br><input type="number" id="range2" min="100" max="10000" value="100" oninput="updateSliderTwo()"></label>
+                                        <label>الى<br><input type="number" id="range1" min="100" max="10000" value="1000" oninput="updateSliderOne()"></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown-container">
+                        <div class="type"><button class="drop" data-target="filter4-4"><p>اللون</p><i class="fa-solid fa-chevron-down"></i></button></div>
+                        <div class="filter-type" id="filter4-4">
+                            <div class="input"><div><label><input type="radio" name="color"><div class="color-div bg-secondary"></div>الكل</label></div>(100)</div>
+                            <div class="input"><div><label><input type="radio" name="color"><div class="color-div bg-danger"></div>احمر</label></div>(90)</div>
+                            <div class="input"><div><label><input type="radio" name="color"><div class="color-div bg-success"></div>اخضر</label></div>(80)</div>
+                            <div class="input"><div><label><input type="radio" name="color"><div class="color-div bg-dark"></div>اسود</label></div>(70)</div>
+                            <div class="input"><div><label><input type="radio" name="color"><div class="color-div bg-primary"></div>أزرق</label></div>(60)</div>
+                            <div class="input"><div><label><input type="radio" name="color"><div class="color-div bg-warning"></div>أصفر</label></div>(60)</div>
+                            <a href="#" style="color: #62D0B6;" class="show-more-link">عرض المزيد</a>
+                        </div>
+                    </div>
+                    <div class="dropdown-container">
+                        <div class="type"><button class="drop" data-target="filter5-5"><p>التقييم</p><i class="fa-solid fa-chevron-down"></i></button></div>
+                        <div class="filter-type" id="filter5-5">
+                            <div class="input"><label><input type="radio" name="color"> الكل</label>(100)</div>
+                            <div class="input"><label><input type="radio" name="color"> <i class="fa-solid fa-star active-star"></i><i class="fa-solid fa-star active-star"></i><i class="fa-solid fa-star active-star"></i><i class="fa-solid fa-star active-star"></i><i class="fa-solid fa-star active-star"></i></label>(90)</div>
+                            <div class="input"><label><input type="radio" name="color"> <i class="fa-solid fa-star active-star"></i><i class="fa-solid fa-star active-star"></i><i class="fa-solid fa-star active-star"></i><i class="fa-solid fa-star active-star"></i><i class="fa-solid fa-star"></i></label>(80)</div>
+                            <div class="input"><label><input type="radio" name="color"> <i class="fa-solid fa-star active-star"></i><i class="fa-solid fa-star active-star"></i><i class="fa-solid fa-star active-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></label>(70)</div>
+                            <div class="input"><label><input type="radio" name="color"> <i class="fa-solid fa-star active-star"></i><i class="fa-solid fa-star active-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></label>(60)</div>
+                        </div>
+                    </div>
+                    <button class="reset-button">إعادة ضبط</button>
+                  </div>
+            </div>
+            <div class="fade-div"></div>
+        </div>
+    </nav>
     <header>
         <div class="top-header">
             <div class="contact-us">
@@ -29,7 +109,7 @@
             </div>
             <div class="title">
               
-                <img src="../Images/Home Page/flag.png" class="img" width="13px" alt=""> <button onclick="translate()">العربية - رس</button>
+                <img src="Images/Home Page/flag.png" class="img" width="13px" alt=""> <button onclick="translate()">العربية - رس</button>
                 <a class="header-title">|</a>
                 <a class="header-title">المفضلة</a>
                 <a class="header-title">|</a>
@@ -40,91 +120,68 @@
         </div>
         <div class="bottom-header">
             <div class="details">
-              <nav class="navbar">
-                <div class="container-fluid">
-                  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header">
-                      <h5 class="offcanvas-title" id="offcanvasNavbarLabel">موقع سلة &nbsp;</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="#">الصفحة الرئسية</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            كل المنتجات
-                          </a>
-                          <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">كل المنتجات</a></li>
-                            <li><a class="dropdown-item" href="#">كل المنتجات</a></li>
-                          </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            كل المنتجات
-                          </a>
-                          <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">كل المنتجات</a></li>
-                            <li><a class="dropdown-item" href="#">كل المنتجات</a></li>
-                          </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            كل المنتجات
-                          </a>
-                          <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">كل المنتجات</a></li>
-                            <li><a class="dropdown-item" href="#">كل المنتجات</a></li>
-                          </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            كل المنتجات
-                          </a>
-                          <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">كل المنتجات</a></li>
-                            <li><a class="dropdown-item" href="#">كل المنتجات</a></li>
-                          </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            كل المنتجات
-                          </a>
-                          <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">كل المنتجات</a></li>
-                            <li><a class="dropdown-item" href="#">كل المنتجات</a></li>
-                          </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            كل المنتجات
-                          </a>
-                          <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">كل المنتجات</a></li>
-                            <li><a class="dropdown-item" href="#">كل المنتجات</a></li>
-                          </ul>
-                        </li>
-                      </ul>
-                      <form class="d-flex mt-3" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                      </form>
-                    </div>
-                  </div>
-                </div>
-              </nav>
                 <div class="cart-profile">
-                    <a href="../index.html" class="cart"><div class=""><img src="../Images/Home Page/icons8-cart-48.png" alt=""></div><p class="logo-title">متجـــــر<br>سلــــــة</p></a>
+                  <nav class="navbar">
+                    <div class="container-fluid">
+                      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars"></i>
+                      </button>
+                      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header offcanvas-body1">
+                          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">جميع الأقسام</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body offcanvas-body1">
+                          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                موبايلات <i class="fa-solid fa-chevron-down"></i>
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="Pages/Categories.html">موبايلات</a></li>
+                                <li><a class="dropdown-item" href="Pages/Categories.html">موبايلات</a></li>
+                              </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                إلكترونيات <i class="fa-solid fa-chevron-down"></i>
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="Pages/Categories.html">إلكترونيات</a></li>
+                                <li><a class="dropdown-item" href="Pages/Categories.html">إلكترونيات</a></li>
+                              </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                ساعات رقمية <i class="fa-solid fa-chevron-down"></i>
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="Pages/Categories.html">ساعات رقمية</a></li>
+                                <li><a class="dropdown-item" href="Pages/Categories.html">ساعات رقمية</a></li>
+                              </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                إضاءة مكتبية <i class="fa-solid fa-chevron-down"></i>
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="Pages/Categories.html">إضاءة مكتبية</a></li>
+                                <li><a class="dropdown-item" href="Pages/Categories.html">إضاءة مكتبية</a></li>
+                              </ul>
+                            </li>
+                          </ul>
+                          <button class="btn nav-btn">الرياض</button>
+                          <button class="btn nav-btn"><img src="Images/Home Page/flag.png" class="img" alt="">العربية | ر.س</button>
+                        </div>
+                      </div>
+                    </div>
+                  </nav>
+                  <a href="#" class="cart"><div class=""><img src="../Images/Home Page/icons8-cart-48.png" alt=""></div><p class="logo-title">متجـــــر<br>سلــــــة</p></a>
                 </div>
                 <div class="search"><i class="fa-solid fa-magnifying-glass"></i> <input type="text" placeholder="ابحث عما تريد" name="" id=""></div>
                 <div class="cart-profile">
                     <div class="cart hide"><div class="icon"><i class="fa-regular fa-user"></i></div><p class="icon-title text">مرحبا بك <br><span>تسجيل دخول <i class="fa-solid fa-chevron-up"></i></span></p></div>
-                    <div class="cart hide"><div class="icon"><i class="fa-solid fa-cart-shopping"></i><p>2</p></div><p class="icon-title text"><a href="Cart.html">سلــــــة المشتريات</a><br><span>رس 1,200</span></p></div>
+                    <div class="cart"><div class="icon"><i class="fa-solid fa-cart-shopping"></i><p>2</p></div><p class="icon-title text"><a href="Pages/Cart.html">سلــــــة المشتريات</a><br><span>رس 1,200</span></p></div>
                 </div>
             </div>
         </div>
@@ -134,8 +191,8 @@
                   كل المنتجات <i class="fa-solid fa-chevron-down"></i>
               </a>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
-                  <li><a class="dropdown-item" href="#">منتج 1</a></li>
-                  <li><a class="dropdown-item" href="#">منتج 2</a></li>
+                  <li><a class="dropdown-item" href="Pages/Categories.html">منتج 1</a></li>
+                  <li><a class="dropdown-item" href="Pages/Categories.html">منتج 2</a></li>
               </ul>
           </div>
           <div class="dropdown">
@@ -143,8 +200,8 @@
                   إلكترونيات <i class="fa-solid fa-chevron-down"></i>
               </a>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink2">
-                  <li><a class="dropdown-item" href="#">إلكترونيات 1</a></li>
-                  <li><a class="dropdown-item" href="#">إلكترونيات 2</a></li>
+                  <li><a class="dropdown-item" href="Pages/Categories.html">إلكترونيات 1</a></li>
+                  <li><a class="dropdown-item" href="Pages/Categories.html">إلكترونيات 2</a></li>
               </ul>
           </div>
           <div class="dropdown">
@@ -152,8 +209,8 @@
                   موبايلات <i class="fa-solid fa-chevron-down"></i>
               </a>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink3">
-                  <li><a class="dropdown-item" href="#">موبايل 1</a></li>
-                  <li><a class="dropdown-item" href="#">موبايل 2</a></li>
+                  <li><a class="dropdown-item" href="Pages/Categories.html">موبايل 1</a></li>
+                  <li><a class="dropdown-item" href="Pages/Categories.html">موبايل 2</a></li>
               </ul>
           </div>
           <div class="dropdown">
@@ -161,8 +218,8 @@
                   كاميرات مراقبة <i class="fa-solid fa-chevron-down"></i>
               </a>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink4">
-                  <li><a class="dropdown-item" href="#">كاميرات مراقبة 1</a></li>
-                  <li><a class="dropdown-item" href="#">كاميرات مراقبة 2</a></li>
+                  <li><a class="dropdown-item" href="Pages/Categories.html">كاميرات مراقبة 1</a></li>
+                  <li><a class="dropdown-item" href="Pages/Categories.html">كاميرات مراقبة 2</a></li>
               </ul>
           </div>
           <div class="dropdown">
@@ -170,8 +227,8 @@
                   سماعات رقمية <i class="fa-solid fa-chevron-down"></i>
               </a>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink5">
-                  <li><a class="dropdown-item" href="#">سماعات رقمية 1</a></li>
-                  <li><a class="dropdown-item" href="#">سماعات رقمية 2</a></li>
+                  <li><a class="dropdown-item" href="Pages/Categories.html">سماعات رقمية 1</a></li>
+                  <li><a class="dropdown-item" href="Pages/Categories.html">سماعات رقمية 2</a></li>
               </ul>
           </div>
           <div class="dropdown">
@@ -179,8 +236,8 @@
                   كاميرات رقمية <i class="fa-solid fa-chevron-down"></i>
               </a>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink6">
-                  <li><a class="dropdown-item" href="#">كاميرات رقمية 1</a></li>
-                  <li><a class="dropdown-item" href="#">كاميرات رقمية 2</a></li>
+                  <li><a class="dropdown-item" href="Pages/Categories.html">كاميرات رقمية 1</a></li>
+                  <li><a class="dropdown-item" href="Pages/Categories.html">كاميرات رقمية 2</a></li>
               </ul>
           </div>
           <div class="dropdown">
@@ -188,8 +245,8 @@
                   أكسسوارات <i class="fa-solid fa-chevron-down"></i>
               </a>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink7">
-                  <li><a class="dropdown-item" href="#">أكسسوارات 1</a></li>
-                  <li><a class="dropdown-item" href="#">أكسسوارات 2</a></li>
+                  <li><a class="dropdown-item" href="Pages/Categories.html">أكسسوارات 1</a></li>
+                  <li><a class="dropdown-item" href="Pages/Categories.html">أكسسوارات 2</a></li>
               </ul>
           </div>
           <div class="dropdown">
@@ -197,8 +254,8 @@
                   شاشات كمبيوتر <i class="fa-solid fa-chevron-down"></i>
               </a>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink8">
-                  <li><a class="dropdown-item" href="#">شاشات كمبيوتر 1</a></li>
-                  <li><a class="dropdown-item" href="#">شاشات كمبيوتر 2</a></li>
+                  <li><a class="dropdown-item" href="Pages/Categories.html">شاشات كمبيوتر 1</a></li>
+                  <li><a class="dropdown-item" href="Pages/Categories.html">شاشات كمبيوتر 2</a></li>
               </ul>
           </div>
           <div class="dropdown">
@@ -206,8 +263,8 @@
                   إلكترونيات <i class="fa-solid fa-chevron-down"></i>
               </a>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink9">
-                  <li><a class="dropdown-item" href="#">إلكترونيات 1</a></li>
-                  <li><a class="dropdown-item" href="#">إلكترونيات 2</a></li>
+                  <li><a class="dropdown-item" href="Pages/Categories.html">إلكترونيات 1</a></li>
+                  <li><a class="dropdown-item" href="Pages/Categories.html">إلكترونيات 2</a></li>
               </ul>
           </div>
           <div class="dropdown">
@@ -215,10 +272,11 @@
                   سماعات <i class="fa-solid fa-chevron-down"></i>
               </a>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink10">
-                  <li><a class="dropdown-item" href="#">سماعات 1</a></li>
-                  <li><a class="dropdown-item" href="#">سماعات 2</a></li>
+                  <li><a class="dropdown-item" href="Pages/Categories.html">سماعات 1</a></li>
+                  <li><a class="dropdown-item" href="Pages/Categories.html">سماعات 2</a></li>
               </ul>
           </div>
+          <div class="search d-none"><i class="fa-solid fa-magnifying-glass"></i> <input type="text" placeholder="ابحث عما تريد" name="" id=""></div>
       </div>
     </header>
 
@@ -297,13 +355,14 @@
         </div>
         <button class="reset-button">إعادة ضبط</button>
       </div><br>
-      <img src="https://s3-alpha-sig.figma.com/img/cb4d/9391/b1ab350ba1ccfc1c4882b4fa3800e4e3?Expires=1725840000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ccV-kVE-TZoclByBX1v1O9VoNa8DvqYia8-Ah2isP5pbuhJKp~8GfwVcgIik7sIC6WLDgIlY-fLIfI1K0KS-1B2ePNAWdFlr6z1NWddAbCUWungVW4zkCGgQeQwitguomGg~VUjDlh509r7R8xBhAd0L~~iSkRoIOlyY-9jX-MLUSEPQgKhqTaosw3PHl0hyD0xhxo8mmghfPWyn4aV3YF3wWHGzr-7qnYIdFihjP2QAf9F9XouWkTIgZSGacu-jJ07~dLruVMWqNXQWLRaaFb0mRc77YCOT3neteCJSX2xdKkh1sqWSIT8LEdlXEmbhRuD5ffXM1KpLw3TII325vw__" class="w-100" alt="">
+      <img src="../Images/Categories/image-6.png" class="w-100" alt="">
         </div>
         <div class="products-container div-1">
             <div class="display">
                 <div class="buttons">
                     <button class="btn" id="gridViewBtn"><i class="fa-solid fa-table-cells"></i></button>
                     <button class="btn active" id="listViewBtn"><i class="fa-solid fa-list"></i></button>
+                    <button class="btn" onclick="sidenav()"><i class="fa-solid fa-filter"></i></button>
                 </div>
                 <div class="sort">
                     <div class="dropdown bottom-tot-top">
@@ -323,7 +382,7 @@
                     <div class="product">
                         <div class="content-container">
                             <div class="image">
-                                <img src="https://s3-alpha-sig.figma.com/img/3478/a1a2/aa4f024817b6894121f3788d1fe608e3?Expires=1725840000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=RZQijq4M~y5cwEk0wqm45YR8YxWq7TMlUH58UuRJakdQH2BgXV5Ueoox8-jJRUF0Etw6UfLVq5VMJ2sMOUk8Ejd6bpGEePdW-wlF7VSj8zQ17sj0HwHVUKmPNxva2LdV1hjukToS5siQOO1FU0gkUHwm70L8IuB3y40H2Cbj7-dfzpnFKmNt3ZM1yOzsT8zqSqaM1hO67cgqcxHxQmv0hPUvYa0Dh75QNjbUniqmiXQ44n7khRc6CJj85ckGiRoJKuZ5Rn-CjkyzsHJ2aYLpx6Jni0WqE-n1sD7E97gZctSyBXXuwk57pryV2FIl~mbhSieTZH2LWESXikcgwSSMMg__" class="w-100 h-100" alt="Product">
+                                <img src="../Images/Categories/image.png" class="w-100 h-100" alt="Product">
                                 <p class="discount">خصم 25%</p></div>
                             </div>
                             <div class="text">
@@ -340,7 +399,7 @@
                     <div class="product">
                         <div class="content-container">
                             <div class="image">
-                                <img src="https://s3-alpha-sig.figma.com/img/b713/3f3a/23f6232e22a731c6d2e8cab913ddf100?Expires=1725840000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=TdLGxWiYNIGrKXbGH1vSCl~ZAksL~AkxqxQ7Ilr3qyTqDUgIgW8ohtBg3jnGUno4h2gczPxOyu03hLI9h-oYBnwLVrlfsofBaEFJDMtLfZRRZYoYfqLSCXo6wV3wjL2P5RHjO-dRIDU-uzUvyOWWCXxW1t5SN7V7evkzrBsXhr01cxlVUNEzMglXtmIUsMHhF43BCRzSEtqSd3ZGPkdSVVe2Q7tTatkBkotDMVK6hfrfpG-yQJLsaTiZ8qXxaamm~A13pT7IzprSYLtHtAODWpmeu673K~Ma~mqowUvbCWQnhNrkZ162CVhvjgFzanQw6YRBQIvTz8JEqbE59dstPg__" class="w-100 h-100" alt="Product">
+                                <img src="../Images/Categories/image-1.png" class="w-100 h-100" alt="Product">
                                 <p class="discount">خصم 25%</p></div>
                             </div>
                             <div class="text">
@@ -357,7 +416,7 @@
                     <div class="product">
                         <div class="content-container">
                             <div class="image">
-                                <img src="https://s3-alpha-sig.figma.com/img/fd87/67e1/7ff562f669dcb6d0d4e813cf9a9f91c8?Expires=1725840000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=gjA9Xb4D45YNjehcx6jyGeO-lbIGWBkGyfem0WRgKc9-ct~cOUdz0Y5glpP-ikk0FQWJ6xAnl4Gbd8WuxSpH41qlozJrwKHUGvmkrZbAAGVJcGqZ7Jtq34DsKfh3UDQ52AQsADMSvnSyho3C3nfTLHaNAGLgoF39fuwD2y1q2cZiWQ9a7V1F0Xr7SPeqcXgDG~AlOmAFRGHMhUxwySQOyE2WDA4c6hV~I-reNKsqritBervWR6vk53E2a0SYDzkZt9iaYM3xwBMLVuscIcLqeLz588CLBu8grPESb9sK6XK2b1Q02iomyKMBhc-RWMbZpgzrM6LPFW7f7d88uufUhw__" class="w-100 h-100" alt="Product">
+                                <img src="../Images/Categories/image-3.png" class="w-100 h-100" alt="Product">
                                 <p class="discount">خصم 25%</p></div>
                             </div>
                             <div class="text">
@@ -374,7 +433,7 @@
                     <div class="product">
                         <div class="content-container">
                             <div class="image">
-                                <img src="https://s3-alpha-sig.figma.com/img/18dc/ef8e/c2ea6a7912f578c833ce1cbaaaaaee7d?Expires=1725840000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=jas55q-DT~c9W~a-EKX6r5LCpFtpL74icq7u8I1LToy1kTiW8Ugfa5mxFMKNTVWixJDlwz~Lr9Ha-rUalivv4YyNmefDyHRD-kXojH8p2FcSGZO~eeKVljeMe92womqsEsygmSF0YVJJzIGUpcFEH7FJoz2tFc63Y5scI-e2CgsCOkK4u1YAvd~q5mXGTiJsiCwOlfqh~9RgQ~W8u9AUHz9Qhihki-zdzz5a9TFLTnsQ0kIKXTHuH7XRUJBMc96AqwGDTYVgCtn42Bv9k-A2QnzNyvqMUDO16Go1rnF~1hwriPpKP8P9cVAYvMiaox-7C7e2YPGdlA~Z-Ao6Pzg59A__" class="w-100 h-100" alt="Product">
+                                <img src="../Images/Categories/image-4.png" class="w-100 h-100" alt="Product">
                                 <p class="discount">خصم 25%</p></div>
                             </div>
                             <div class="text">
@@ -391,7 +450,7 @@
                     <div class="product">
                         <div class="content-container">
                             <div class="image">
-                                <img src="https://s3-alpha-sig.figma.com/img/7139/b3cc/17a36da60a9cdeafd6a6255666186997?Expires=1725840000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=PGTGzgqaJm35-bGesFJPpcrcKqfImg~tu9Ks5i6B70Lxm7aJAKd1agFnYeiVXWU2pUV2aAC5~QCkxyNgUgNPDClwOmgR2pZcDY58xjLkHdZyYyUC17XCSkqzs9aWaJo-2n7tyG3uRN~Q8hz6Y5ZXx81ZdhfaF4fJmj8Mz~5jbhlo8PCR0GRdsQ3r4VFfDvj8YmSY6hZlP3B5H6VjPqTKxGVLi2rtdybtrnW2YGnLdI6o1~LGlHeNpKVAtlH6Yy3bGgd5YIu1auxgTbhQ5ZOiJQwiqMyDqpyvl5TeQ~AX147Md2mSRRkQ4UOZxdiWG1ZTvt6-0kKRa2a55iAe7yfqow__" class="w-100 h-100" alt="Product">
+                                <img src="../Images/Categories/image-5.png" class="w-100 h-100" alt="Product">
                                 <p class="discount">خصم 25%</p></div>
                             </div>
                             <div class="text">
@@ -408,7 +467,7 @@
                     <div class="product">
                         <div class="content-container">
                             <div class="image">
-                                <img src="https://s3-alpha-sig.figma.com/img/3478/a1a2/aa4f024817b6894121f3788d1fe608e3?Expires=1725840000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=RZQijq4M~y5cwEk0wqm45YR8YxWq7TMlUH58UuRJakdQH2BgXV5Ueoox8-jJRUF0Etw6UfLVq5VMJ2sMOUk8Ejd6bpGEePdW-wlF7VSj8zQ17sj0HwHVUKmPNxva2LdV1hjukToS5siQOO1FU0gkUHwm70L8IuB3y40H2Cbj7-dfzpnFKmNt3ZM1yOzsT8zqSqaM1hO67cgqcxHxQmv0hPUvYa0Dh75QNjbUniqmiXQ44n7khRc6CJj85ckGiRoJKuZ5Rn-CjkyzsHJ2aYLpx6Jni0WqE-n1sD7E97gZctSyBXXuwk57pryV2FIl~mbhSieTZH2LWESXikcgwSSMMg__" class="w-100 h-100" alt="Product">
+                                <img src="../Images/Categories/image.png" class="w-100 h-100" alt="Product">
                                 <p class="discount">خصم 25%</p></div>
                             </div>
                             <div class="text">
@@ -425,7 +484,7 @@
                     <div class="product">
                         <div class="content-container">
                             <div class="image">
-                                <img src="https://s3-alpha-sig.figma.com/img/3478/a1a2/aa4f024817b6894121f3788d1fe608e3?Expires=1725840000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=RZQijq4M~y5cwEk0wqm45YR8YxWq7TMlUH58UuRJakdQH2BgXV5Ueoox8-jJRUF0Etw6UfLVq5VMJ2sMOUk8Ejd6bpGEePdW-wlF7VSj8zQ17sj0HwHVUKmPNxva2LdV1hjukToS5siQOO1FU0gkUHwm70L8IuB3y40H2Cbj7-dfzpnFKmNt3ZM1yOzsT8zqSqaM1hO67cgqcxHxQmv0hPUvYa0Dh75QNjbUniqmiXQ44n7khRc6CJj85ckGiRoJKuZ5Rn-CjkyzsHJ2aYLpx6Jni0WqE-n1sD7E97gZctSyBXXuwk57pryV2FIl~mbhSieTZH2LWESXikcgwSSMMg__" class="w-100 h-100" alt="Product">
+                                <img src="../Images/Categories/image.png" class="w-100 h-100" alt="Product">
                                 <p class="discount">خصم 25%</p></div>
                             </div>
                             <div class="text">
@@ -442,7 +501,7 @@
                     <div class="product hide">
                         <div class="content-container">
                             <div class="image">
-                                <img src="https://s3-alpha-sig.figma.com/img/3478/a1a2/aa4f024817b6894121f3788d1fe608e3?Expires=1725840000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=RZQijq4M~y5cwEk0wqm45YR8YxWq7TMlUH58UuRJakdQH2BgXV5Ueoox8-jJRUF0Etw6UfLVq5VMJ2sMOUk8Ejd6bpGEePdW-wlF7VSj8zQ17sj0HwHVUKmPNxva2LdV1hjukToS5siQOO1FU0gkUHwm70L8IuB3y40H2Cbj7-dfzpnFKmNt3ZM1yOzsT8zqSqaM1hO67cgqcxHxQmv0hPUvYa0Dh75QNjbUniqmiXQ44n7khRc6CJj85ckGiRoJKuZ5Rn-CjkyzsHJ2aYLpx6Jni0WqE-n1sD7E97gZctSyBXXuwk57pryV2FIl~mbhSieTZH2LWESXikcgwSSMMg__" class="w-100 h-100" alt="Product">
+                                <img src="../Images/Categories/image.png" class="w-100 h-100" alt="Product">
                                 <p class="discount">خصم 25%</p></div>
                             </div>
                             <div class="text">
@@ -459,7 +518,7 @@
                     <div class="product hide">
                         <div class="content-container">
                             <div class="image">
-                                <img src="https://s3-alpha-sig.figma.com/img/3478/a1a2/aa4f024817b6894121f3788d1fe608e3?Expires=1725840000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=RZQijq4M~y5cwEk0wqm45YR8YxWq7TMlUH58UuRJakdQH2BgXV5Ueoox8-jJRUF0Etw6UfLVq5VMJ2sMOUk8Ejd6bpGEePdW-wlF7VSj8zQ17sj0HwHVUKmPNxva2LdV1hjukToS5siQOO1FU0gkUHwm70L8IuB3y40H2Cbj7-dfzpnFKmNt3ZM1yOzsT8zqSqaM1hO67cgqcxHxQmv0hPUvYa0Dh75QNjbUniqmiXQ44n7khRc6CJj85ckGiRoJKuZ5Rn-CjkyzsHJ2aYLpx6Jni0WqE-n1sD7E97gZctSyBXXuwk57pryV2FIl~mbhSieTZH2LWESXikcgwSSMMg__" class="w-100 h-100" alt="Product">
+                                <img src="../Images/Categories/image.png" class="w-100 h-100" alt="Product">
                                 <p class="discount">خصم 25%</p></div>
                             </div>
                             <div class="text">
@@ -476,7 +535,7 @@
                     <div class="product hide">
                         <div class="content-container">
                             <div class="image">
-                                <img src="https://s3-alpha-sig.figma.com/img/3478/a1a2/aa4f024817b6894121f3788d1fe608e3?Expires=1725840000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=RZQijq4M~y5cwEk0wqm45YR8YxWq7TMlUH58UuRJakdQH2BgXV5Ueoox8-jJRUF0Etw6UfLVq5VMJ2sMOUk8Ejd6bpGEePdW-wlF7VSj8zQ17sj0HwHVUKmPNxva2LdV1hjukToS5siQOO1FU0gkUHwm70L8IuB3y40H2Cbj7-dfzpnFKmNt3ZM1yOzsT8zqSqaM1hO67cgqcxHxQmv0hPUvYa0Dh75QNjbUniqmiXQ44n7khRc6CJj85ckGiRoJKuZ5Rn-CjkyzsHJ2aYLpx6Jni0WqE-n1sD7E97gZctSyBXXuwk57pryV2FIl~mbhSieTZH2LWESXikcgwSSMMg__" class="w-100 h-100" alt="Product">
+                                <img src="../Images/Categories/image.png" class="w-100 h-100" alt="Product">
                                 <p class="discount">خصم 25%</p></div>
                             </div>
                             <div class="text">
@@ -493,7 +552,7 @@
                     <div class="product hide">
                         <div class="content-container">
                             <div class="image">
-                                <img src="https://s3-alpha-sig.figma.com/img/3478/a1a2/aa4f024817b6894121f3788d1fe608e3?Expires=1725840000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=RZQijq4M~y5cwEk0wqm45YR8YxWq7TMlUH58UuRJakdQH2BgXV5Ueoox8-jJRUF0Etw6UfLVq5VMJ2sMOUk8Ejd6bpGEePdW-wlF7VSj8zQ17sj0HwHVUKmPNxva2LdV1hjukToS5siQOO1FU0gkUHwm70L8IuB3y40H2Cbj7-dfzpnFKmNt3ZM1yOzsT8zqSqaM1hO67cgqcxHxQmv0hPUvYa0Dh75QNjbUniqmiXQ44n7khRc6CJj85ckGiRoJKuZ5Rn-CjkyzsHJ2aYLpx6Jni0WqE-n1sD7E97gZctSyBXXuwk57pryV2FIl~mbhSieTZH2LWESXikcgwSSMMg__" class="w-100 h-100" alt="Product">
+                                <img src="../Images/Categories/image.png" class="w-100 h-100" alt="Product">
                                 <p class="discount">خصم 25%</p></div>
                             </div>
                             <div class="text">
@@ -510,7 +569,7 @@
                     <div class="product hide">
                         <div class="content-container">
                             <div class="image">
-                                <img src="https://s3-alpha-sig.figma.com/img/3478/a1a2/aa4f024817b6894121f3788d1fe608e3?Expires=1725840000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=RZQijq4M~y5cwEk0wqm45YR8YxWq7TMlUH58UuRJakdQH2BgXV5Ueoox8-jJRUF0Etw6UfLVq5VMJ2sMOUk8Ejd6bpGEePdW-wlF7VSj8zQ17sj0HwHVUKmPNxva2LdV1hjukToS5siQOO1FU0gkUHwm70L8IuB3y40H2Cbj7-dfzpnFKmNt3ZM1yOzsT8zqSqaM1hO67cgqcxHxQmv0hPUvYa0Dh75QNjbUniqmiXQ44n7khRc6CJj85ckGiRoJKuZ5Rn-CjkyzsHJ2aYLpx6Jni0WqE-n1sD7E97gZctSyBXXuwk57pryV2FIl~mbhSieTZH2LWESXikcgwSSMMg__" class="w-100 h-100" alt="Product">
+                                <img src="../Images/Categories/image.png" class="w-100 h-100" alt="Product">
                                 <p class="discount">خصم 25%</p></div>
                             </div>
                             <div class="text">
@@ -594,13 +653,14 @@
         <div class="bottom-footer">
           <div class="copyright">الحقوق محفوظة لمنصة سلة © 2023</div>
           <div class="imgs">
-            <div class="vat"><img src="https://s3-alpha-sig.figma.com/img/d8c5/bfae/6f0c1b6cdb7faa0e955b7c2d7a8f6df4?Expires=1725840000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=aiGxmwVWvCx6giysDaaOXdKfZeaBmAsvHNGLza8Hg3wP4Ew0LIUaj0A5tKZGhDU1YsswPHg0CXMSdAtPKgt98T8p7hgB~fvi6gmwLrMjCS966DoghHELWRtZYJTcoTrVryZb5WNY2azJ7cmz4if07x-c3V5FBkThGP~xbr1nzjOlQeSCEZiTJsego7QSC~bREF71DeothzLZZU44iCqy7vTsuoAmVjDGe0ZjGEhdQtwf05x3dUzrhGgyVvwQT3ep0cWpDpqsql8GnFNmnrnDC1awAALOJ7KZmYyORWWYJFQCZTwExrj39p37PBpRu2dfm3ONdLdnry8efI7XnuIiBQ__" alt=""><p>الرقم الضريبى : 546987552</p></div>
+            <div class="vat vat1"><img src="../Images/Home Page/vat.jpg" alt=""><p>الرقم الضريبى : 546987552</p></div>
             <div class="payment">
-              <div><img src="https://s3-alpha-sig.figma.com/img/a85e/315d/1fc681b820f30a9fc23952fedcaf6419?Expires=1725840000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=bqWkKu~O~dzvBusMIDFYutzam1rmo1j5plsXP3oJN7SjcMBahGoJ9CerjLbCy3AbRDWRhrbMseO5l4Y4-5Vd9P0QuYEnAC8ePP7hc16YL0ZqEXmeqtphEKk9JZ9j~o0XHXPLQnxNNwHtXIGSrgBYsaK1mI0miZ9WYDnn5RILDJfq-gX4dYsyl3BN~f2sMJmdLTi7Rq~IS3gS8I9ck2Q9JYPAAE~BcxsANeKCwuKC0CVcv3a97DH8dQFKfGhn1Il2EIK91IqUjPXKncFbvA8rvBHRAU-gndLNpdlpLWHNJNl1MqudCGzSaIZeiuFylwBoWALp0NHmkXyFSUW1GdgCDg__" alt=""></div>
-              <div><img src="https://s3-alpha-sig.figma.com/img/3ebc/f58d/6f85eb2ada37eb07859f25164c3c7264?Expires=1725840000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=EE29Cd08x5V9JGc1O8gnmZYmZoSBeb0~FiWMLQwKATByFkdtHoMzqVLqtvuIvyU2BReMkj77-OgaG10ouDNBppkhar-VKiV0fu4pbMIcugfObjB6f59p-Y1r6zjERHlQ5tgmoVyZv~f7mM166sqrq-sEHM2cr~eG5waaPVpPXp4tARPL-a4tMiB3Fbrt6uKr8PfQ2eFk-6aJdiwj-g~sWh3WQYHOsgYB8~J4RDHgXwNsiIlr1eCqKboUDUauIVvWe78FbK2ji5quUlpW6~Wc1LonH5ihi56T6DWMTeLFg0M8GarlicsIPHGjalchNpQMIaRj3DROIZF1Y0DlvovC2Q__" alt=""></div>
-              <div><img src="https://s3-alpha-sig.figma.com/img/30b2/89b9/0bc206396168a2af91aefc5909e86eff?Expires=1725840000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ag~Z3S8T-VBaznbohiQkpfN8iIsnvmjzc5fqygInUvOprgPI9AWIpA6oAe~jjx9fYydt-WkYlaH2t-hknE2qKKQlXujEkq2KkhhxaKbenlA7Bimrtk9F7ND-ncMwiPJ8JEVN0Si1LZIj8n-UcgnH5jGsxUsjg5cX-1JG6ULI4HoU9m8RTIshDG2Ml87lX3D3WFtfUY6uBFkF7oqLHJcof~hMxbo5LlfUlqsUlv3LURt3YVTB72ksAsaP85gjD-EAcqZRu4baoHLljUZZkHwMB4V7OeP256Rc6PjCZSGUqDYtYlt-4Ksiayi5qSDwCAGQgw8Pyr9XG3W7y0rj0T3i3A__" alt=""></div>
-              <div><img src="https://s3-alpha-sig.figma.com/img/3ece/0687/e503b99cf8c16c9765b5d41af8da2e6e?Expires=1725840000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=eNw2Zq2gLsZAx~ebqNTGNdcG3vmKzl4gCfgJsn-yEF8wWn0XPKhxzWvIh4SSPysJ8GGU2BwxHR6~efylQuSKHojzHoZJBBNyy0mPnIoblr8s3Dwrus48GSc23W758gCPLeUERAmW4zNhhRI18k6jr5bObBPk7DpGQwG0nKiIevs4lDxT7VTxd4G8j~u3-ods737uhiabr26dJI71G4QTsk-TKnYxmBbUTYKTrz8wI8hNBaHhG6qhfJ~~Ev8R2k0szhnBJacm5V9CGxZrFhUfXtn7Fadep-R6jld6prScqoePEb2eJIkQw8UMA1uUp-iCbFIcyr6YzgCsSmPQa~4ccA__" alt=""></div>
+              <div><img src="../Images/Home Page/visa.png" alt=""></div>
+              <div><img src="../Images/Home Page/master-card.png" alt=""></div>
+              <div><img src="../Images/Home Page/Paypal.png" alt=""></div>
+              <div><img src="../Images/Home Page/mada.png" alt=""></div>
             </div>
+            <div class="vat vat2 d-none"><img src="../Images/Home Page/vat.jpg" alt=""><p>الرقم الضريبى : 546987552</p></div>
           </div>
         </div>
       </footer>
@@ -611,5 +671,23 @@
     <script src="../JS/sript-2.js"></script>
     <script src="../JS/loading.js"></script>
     <script src="../JS/search.js"></script>
+      <script>
+        // Get the elements
+        const sidenav = document.querySelector('.sidenav');
+        const resetButton = document.querySelector('.fa-filter');
+        const closeButton = document.querySelector('.btn-close');
+      
+        // Add 'active-sidenav' class when reset button is clicked
+        resetButton.addEventListener('click', () => {
+          sidenav.classList.add('active-sidenav');
+        });
+      
+        // Remove 'active-sidenav' class when close button is clicked
+        closeButton.addEventListener('click', () => {
+          sidenav.classList.remove('active-sidenav');
+        });
+      </script>
+      
+      
 </body>
 </html>

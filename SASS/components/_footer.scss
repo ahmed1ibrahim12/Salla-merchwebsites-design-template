@@ -32,9 +32,6 @@ footer{
                 }
             }
             .email{
-                .search-box{
-                    height: 43px;
-                }
                 .text{
                     font-size: 14px;
                     font-weight: bold;
@@ -143,6 +140,7 @@ footer{
         }
         .payment{
             @include flex;
+            align-items: normal !important;
             div{
                 background-color: white;
                 padding: 5px;
@@ -167,7 +165,7 @@ footer{
         .icon-title{
             font-size: 17px !important;
             span {
-                font-size: 11px !important;
+                font-size: 10px !important;
             }
         }
     }
@@ -195,26 +193,54 @@ footer{
     }
 }
 @media (max-width: 425px){
-    .top-footer{
-        background-color: black;
-        .email{
-            input{
-                width: 60% !important;
-            }
-        }
-    }
     footer{
         .second-footer{
             display: block !important;
-            text-align: center;
+        }
+        .top-footer{
+            padding: 1.5rem 0.5rem !important;
+            .container{
+                padding: 0 !important;
+            }
+            .email{
+                input{
+                    width: 315px !important;
+                    height: 43px !important;
+                }
+            }
+            .icon{
+                margin: 0 !important;
+                padding: 0.5rem !important;
+            }
+            .cart{
+                flex-wrap: nowrap !important;
+                .icon-title{
+                    font-size: 16px !important;
+                    font-weight: bolder;
+                    span{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+        .bottom-footer{
+            flex-direction: column-reverse;
+            .vat1{
+                display: none !important;
+            }
+            .vat2{
+                display: flex !important;
+            }
+            .payment{
+                img{
+                    width: 46px !important;
+                }
+            }
+            
         }
     }
     footer .second-footer .text, footer .second-footer a {
         font-size: 14px !important;
-        text-align: center;
         width: 100%;
-    }
-    .email .search-box {
-        height: auto !important;
     }
 }

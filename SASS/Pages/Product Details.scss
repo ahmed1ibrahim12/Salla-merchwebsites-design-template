@@ -257,22 +257,6 @@
     .active{
         display: block;
     }
-    .top-header{
-        width: 100%;
-        border-bottom: 1px solid $icons-color;
-        button{
-            width: 165px;
-            padding: 1rem;
-            border: none;
-            outline: none;
-            background-color: white;
-            color: #666666;
-        }
-        .active-button{
-            background-color: $icons-color !important;
-            color: white !important;
-        }
-    }
     .info-1{
         border: 1px solid #EEEEEE;
         font-weight: bold;
