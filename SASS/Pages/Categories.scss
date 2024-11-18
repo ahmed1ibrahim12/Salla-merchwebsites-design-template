@@ -33,7 +33,7 @@ body {
 }
 
 .hide{
-    display: none
+    display: none;
 }
 //sorting
 .main{
@@ -104,9 +104,9 @@ body {
                         color: $icons-color;
                     }
                     .add {
-                        width: 550px;
-                        padding: 1rem !important;
-                        height: auto !important;
+                        width: 519px;
+                        padding: 1rem;
+                        height: auto;
                     }
                     .substitle{
                         font-size: 18px;
@@ -183,8 +183,60 @@ body {
         .rating {
             display: none;
         }
+        @media(max-width: 425px){
+            justify-content: space-between !important;
+            .product{
+                padding: 1rem !important;
+                    flex-wrap: wrap;
+                    width: 46% !important;
+                .image{
+                    width: auto !important;
+                    img{
+                        width: 150px !important;
+                    }
+                }
+                .text{
+                    p{
+                        margin: 0.5rem !important;
+                    }
+                    .title{
+                        font-size: 13px !important;
+                    }
+                    .subtitle{
+                        font-size: 13px;
+                        span{
+                            font-size: 13px;
+                        }
+                    }
+                    .add{
+                        width: 102px !important;
+                    }
+                }
+            }
+        }
+    }
+    &.list-view {
+        display: flex;
+        justify-content: space-between;
+        .product {
+            width: 95% !important;
+        }
+        .title {
+            font-size: 14px;
+        }
+        .subtitle {
+            font-size: 18px;
+    
+            span {
+                font-size: 16px;
+            }
+        }
+        .rating {
+            display: block;
+        }
         @media (max-width: 425px) {
             .product{
+                flex-wrap: nowrap;
                 .text {
                     margin: 0 !important;
                 }
@@ -205,54 +257,6 @@ body {
                     color: #666666;
                     span {
                         font-size: 14px !important;
-                    }
-                }
-            }
-        }
-    }
-    &.list-view {
-        display: flex;
-        justify-content: space-between;
-        .product {
-            width: 100%;
-        }
-        .title {
-            font-size: 14px;
-        }
-        .subtitle {
-            font-size: 18px;
-    
-            span {
-                font-size: 16px;
-            }
-        }
-        .rating {
-            display: block;
-        }
-        @media(max-width: 425px){
-            .product{
-                padding: 1rem 0 !important;
-                .image{
-                    width: 150px !important;
-                    img{
-                        width: 150px !important;
-                    }
-                }
-                .text{
-                    p{
-                        margin: 0.5rem !important;
-                    }
-                    .title{
-                        font-size: 13px !important;
-                    }
-                    .substitle{
-                        font-size: 15px;
-                        span{
-                            font-size: 13px;
-                        }
-                    }
-                    .add{
-                        width: 180px !important;
                     }
                 }
             }
@@ -406,19 +410,15 @@ body {
 }
 
 @media (max-width: 425px){
-    .products.grid-view {
-        justify-content: center;
-    }
     .active-sidenav{
         display: block !important;
     }
     .product{
         .text {
             margin: 0 !important;
-        }
-        .add {
-            width: 114px !important;
-            font-size: 13px !important;
+            .rating{
+                font-size: 12px;
+            }
         }
         .save {
             width: 44px !important;
@@ -428,16 +428,16 @@ body {
             font-weight: bolder;
         }
         .subtitle { // corrected from substitle
-            font-size: 16px !important;
+            font-size: 13px !important;
             font-weight: bold;
             color: #666666;
             span {
-                font-size: 14px !important;
+                font-size: 11px !important;
             }
         }
     }
     .hide{
-        display: block !important;
+        display: flex !important;
     }
     .div-2{
         display: none !important;
@@ -446,7 +446,9 @@ body {
         margin: 0 !important;
     }
     .add{
-        width: 114px !important;
+        padding: 0.7rem !important;
+        height: 54px !important;
+        width: 102px !important;
         font-size: 13px !important;
     }
     .save{
@@ -456,12 +458,12 @@ body {
         font-size: 18px !important;
         font-weight: bolder;
     }
-    .substitle{
-        font-size: 16px !important;
-        font-weight: bold;
-        color: #666666;
-        span{
-            font-size: 14px !important;
+    .product{
+        .image{
+            width: 130px !important;
+            img{
+                height: 150px;
+            }
         }
     }
 }

@@ -990,6 +990,7 @@ input[type=range]::-webkit-slider-thumb {
 }
 .information .info-1, .information .info-2, .information .info-3 {
   display: none;
+  border-top: 5px solid #62D0B6 !important;
 }
 .information .active {
   display: block;
@@ -1016,10 +1017,10 @@ input[type=range]::-webkit-slider-thumb {
   background-color: black;
 }
 .information .info-1 .banners .banner1 {
-  background-image: url("https://s3-alpha-sig.figma.com/img/6387/410c/6f7d77f26936e4de74b59d3aca44a0a7?Expires=1725840000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=dd3COZqvEzfdDImL3iyQ-l9E2HGCnMGYM~jKUD93mkjnX7P2ZJyIZBvE8Hba7CsAajQUqiD5XWcgQMssJkofd~-0wpROJxB3GrXoEyGJE5TQcRu265suRM9-DdNWtX3hF5y4eAd-tzXhriLzrpgLeKnhFqGaUPSYCM5EVgt7xcN7gm00x1TmJIjGUaQJ2QLiVkf-tbnFNdx~3JpJVzW1c1My~djK44fTYSGiE5VLJmL~p93Vw~PXNgARMv3aaLs0AzFYXcUrf37caFs0SP3gx69JtzDwz-ZbFFZ01oRezJrrIbsHKhgGOdeDvQPaS3MUU6Iukq9r8btnPbbIgku1sw__");
+  background-image: url("../../Images/Product Details/image.png");
 }
 .information .info-1 .banners .banner2 {
-  background-image: url("https://s3-alpha-sig.figma.com/img/bb97/ba15/3b96554c5e29a95ac7a8b027c7abd420?Expires=1725840000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=dHlzD2wgmfiVyRD3ZhybTsPmTo1nUVi~smpmG~XImiTVIarQqWGXrIgoSec83YIMFvSc3UOFTSHFhL-Fe-Crqs6lTKh6l6KnbxjZAdGfBhFrytZnqa6Z-vE-tv~TLkVht4vXOr3ypwb2lyHskR7qGeLQIpgWtdR3bvdqWubmRwMvldDrdY4ITtV8zaagwQllidL4Ll3el92Gtow7e34cFcsgUYvmAuje9wLEWq1~oUaT0NZ-6-ohp1jzhfAH-oPcbvkzjXU1YctlbvaTuL8wq3jIUmX6sryKPJ4vGpXd1a~GzT5NiFqz1WNKkNG2CdegUWIMFiZF6R67t6OAcn2s~w__");
+  background-image: url("../../Images/Product Details/image-2.png");
 }
 .information .info-1 .moments .title {
   font-size: 36px;
@@ -1177,6 +1178,17 @@ input[type=range]::-webkit-slider-thumb {
 .information .info-3 .comments .show-more:hover {
   background-color: rgb(202, 200, 200);
 }
+.information .top-header button {
+  width: 165px;
+  padding: 1rem;
+  background-color: white;
+  color: black;
+  border: 0;
+}
+.information .top-header .active-button {
+  background-color: #62D0B6 !important;
+  color: white;
+}
 
 .list-container .icon-title {
   font-size: 20px;
@@ -1332,6 +1344,13 @@ input[type=range]::-webkit-slider-thumb {
   transition: color 0.6s;
 }
 
+.active-button {
+  width: 165px;
+  padding: 1rem;
+  background-color: white;
+  color: black;
+}
+
 @media (max-width: 1024px) {
   .phone {
     justify-content: center !important;
@@ -1347,14 +1366,30 @@ input[type=range]::-webkit-slider-thumb {
   }
 }
 @media (max-width: 425px) {
+  .title-info {
+    width: 278px;
+  }
+  .number .buttons .btn {
+    width: 400px !important;
+  }
+  .brand {
+    margin-bottom: 1rem;
+  }
   .image {
-    width: 400px;
+    width: 90% !important;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
   }
   .image .main-img {
-    width: 250px !important;
+    margin: auto !important;
+    width: 100% !important;
   }
   .image .small-imgs {
-    width: 30px !important;
+    display: inline-block;
+    width: 19% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
   .content-container {
     width: 400px !important;
@@ -1372,7 +1407,57 @@ input[type=range]::-webkit-slider-thumb {
   .page-title {
     padding: 0 !important;
   }
+  .information .top-header {
+    padding: 0 !important;
+  }
   .information button {
     width: 33% !important;
+  }
+  .info-container .moments .title {
+    font-size: 25px !important;
+  }
+  .info-container .moments-2 {
+    flex-direction: column-reverse;
+  }
+  .info-container .moments-2 img {
+    width: 100% !important;
+  }
+  .info-container .w-fit {
+    width: fit-content !important;
+  }
+  .info-container .info-1 .banner {
+    margin-bottom: 1rem;
+  }
+  .products {
+    width: 100%;
+  }
+  .products .time-container {
+    justify-content: space-around !important;
+  }
+  .products .buttons .add {
+    width: 302px !important;
+    margin-left: 0.5rem;
+  }
+  .products .buttons .save {
+    width: 50px !important;
+  }
+  .products .content .card-product .buttons {
+    margin-top: 1rem 0 !important;
+    display: inline-flex;
+  }
+  .card {
+    width: 49% !important;
+  }
+  .card img {
+    height: 157px !important;
+    width: 80% !important;
+    margin: auto;
+  }
+  .add {
+    width: 114px !important;
+    font-size: 15px !important;
+  }
+  .save {
+    width: 44px !important;
   }
 }/*# sourceMappingURL=Product Details.css.map */

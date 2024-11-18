@@ -819,9 +819,9 @@ body {
   color: #62D0B6;
 }
 .main .div-1 .products .product .text .add {
-  width: 550px;
-  padding: 1rem !important;
-  height: auto !important;
+  width: 519px;
+  padding: 1rem;
+  height: auto;
 }
 .main .div-1 .products .product .text .substitle {
   font-size: 18px;
@@ -899,27 +899,34 @@ body {
   display: none;
 }
 @media (max-width: 425px) {
-  .products.grid-view .product .text {
-    margin: 0 !important;
+  .products.grid-view {
+    justify-content: space-between !important;
   }
-  .products.grid-view .product .add {
-    width: 114px !important;
+  .products.grid-view .product {
+    padding: 1rem !important;
+    flex-wrap: wrap;
+    width: 46% !important;
+  }
+  .products.grid-view .product .image {
+    width: auto !important;
+  }
+  .products.grid-view .product .image img {
+    width: 150px !important;
+  }
+  .products.grid-view .product .text p {
+    margin: 0.5rem !important;
+  }
+  .products.grid-view .product .text .title {
     font-size: 13px !important;
   }
-  .products.grid-view .product .save {
-    width: 44px !important;
+  .products.grid-view .product .text .subtitle {
+    font-size: 13px;
   }
-  .products.grid-view .product .title {
-    font-size: 18px !important;
-    font-weight: bolder;
+  .products.grid-view .product .text .subtitle span {
+    font-size: 13px;
   }
-  .products.grid-view .product .subtitle {
-    font-size: 16px !important;
-    font-weight: bold;
-    color: #666666;
-  }
-  .products.grid-view .product .subtitle span {
-    font-size: 14px !important;
+  .products.grid-view .product .text .add {
+    width: 102px !important;
   }
 }
 .products.list-view {
@@ -927,7 +934,7 @@ body {
   justify-content: space-between;
 }
 .products.list-view .product {
-  width: 100%;
+  width: 95% !important;
 }
 .products.list-view .title {
   font-size: 14px;
@@ -943,28 +950,29 @@ body {
 }
 @media (max-width: 425px) {
   .products.list-view .product {
-    padding: 1rem 0 !important;
+    flex-wrap: nowrap;
   }
-  .products.list-view .product .image {
-    width: 150px !important;
+  .products.list-view .product .text {
+    margin: 0 !important;
   }
-  .products.list-view .product .image img {
-    width: 150px !important;
-  }
-  .products.list-view .product .text p {
-    margin: 0.5rem !important;
-  }
-  .products.list-view .product .text .title {
+  .products.list-view .product .add {
+    width: 114px !important;
     font-size: 13px !important;
   }
-  .products.list-view .product .text .substitle {
-    font-size: 15px;
+  .products.list-view .product .save {
+    width: 44px !important;
   }
-  .products.list-view .product .text .substitle span {
-    font-size: 13px;
+  .products.list-view .product .title {
+    font-size: 18px !important;
+    font-weight: bolder;
   }
-  .products.list-view .product .text .add {
-    width: 180px !important;
+  .products.list-view .product .subtitle {
+    font-size: 16px !important;
+    font-weight: bold;
+    color: #666666;
+  }
+  .products.list-view .product .subtitle span {
+    font-size: 14px !important;
   }
 }
 
@@ -1119,18 +1127,14 @@ body {
   }
 }
 @media (max-width: 425px) {
-  .products.grid-view {
-    justify-content: center;
-  }
   .active-sidenav {
     display: block !important;
   }
   .product .text {
     margin: 0 !important;
   }
-  .product .add {
-    width: 114px !important;
-    font-size: 13px !important;
+  .product .text .rating {
+    font-size: 12px;
   }
   .product .save {
     width: 44px !important;
@@ -1140,15 +1144,15 @@ body {
     font-weight: bolder;
   }
   .product .subtitle {
-    font-size: 16px !important;
+    font-size: 13px !important;
     font-weight: bold;
     color: #666666;
   }
   .product .subtitle span {
-    font-size: 14px !important;
+    font-size: 11px !important;
   }
   .hide {
-    display: block !important;
+    display: flex !important;
   }
   .div-2 {
     display: none !important;
@@ -1157,7 +1161,9 @@ body {
     margin: 0 !important;
   }
   .add {
-    width: 114px !important;
+    padding: 0.7rem !important;
+    height: 54px !important;
+    width: 102px !important;
     font-size: 13px !important;
   }
   .save {
@@ -1167,12 +1173,10 @@ body {
     font-size: 18px !important;
     font-weight: bolder;
   }
-  .substitle {
-    font-size: 16px !important;
-    font-weight: bold;
-    color: #666666;
+  .product .image {
+    width: 130px !important;
   }
-  .substitle span {
-    font-size: 14px !important;
+  .product .image img {
+    height: 150px;
   }
 }/*# sourceMappingURL=Categories.css.map */
