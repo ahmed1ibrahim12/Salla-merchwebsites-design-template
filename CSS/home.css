@@ -713,7 +713,7 @@ header .titls a i {
 }
 @font-face {
   font-family: "DINNextLTArabicLight";
-  src: url("../../Assets/fonts/DIN Next LT Arabic Light.ttf") format("truetype");
+  src: url("../Assets/fonts/DIN Next LT Arabic Light.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -880,10 +880,10 @@ header .titls a i {
   font-weight: bolder;
 }
 .list-container .banner-container .banner1, .list-container .banner-container .banners-container .banners1 .banner4, .banners-container .banners1 .list-container .banner-container .banner4, .list-container .banner-container .banners-container .banners1 .banner3, .banners-container .banners1 .list-container .banner-container .banner3, .list-container .banner-container .banners-container .banners1 .banner2, .banners-container .banners1 .list-container .banner-container .banner2 {
-  background-image: url("../../Images/Home Page/Image1.png");
+  background-image: url("../Images/Home Page/Image1.png");
 }
 .list-container .banner-container .banner2 {
-  background-image: url("../../Images/Home Page/Image2.png");
+  background-image: url("../Images/Home Page/Image2.png");
 }
 .list-container .products {
   margin: 3rem 0;
@@ -968,7 +968,7 @@ header .titls a i {
 }
 
 .pattern {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../Images/Home Page/image-8.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Images/Home Page/image-8.png");
   padding: 3rem 0;
   background-position: center;
   background-repeat: no-repeat;
@@ -1041,6 +1041,7 @@ header .titls a i {
   border-radius: 10px;
   display: inline-block;
   width: 14.2%;
+  margin: 0;
 }
 .category .category-name {
   color: #333333;
@@ -1115,16 +1116,16 @@ header .titls a i {
   display: inline-block;
 }
 .banners-container .banners1 .banner1, .banners-container .banners1 .banner4, .banners-container .banners1 .banner3, .banners-container .banners1 .banner2 {
-  background-image: url("../../Images/Home Page/banner-cms-06.png");
+  background-image: url("../Images/Home Page/banner-cms-06.png");
 }
 .banners-container .banners1 .banner2 {
-  background-image: url("../../Images/Home Page/banner-cms-05.png");
+  background-image: url("../Images/Home Page/banner-cms-05.png");
 }
 .banners-container .banners1 .banner3 {
-  background-image: url("../../Images/Home Page/banner-cms-056.png");
+  background-image: url("../Images/Home Page/banner-cms-056.png");
 }
 .banners-container .banners1 .banner4 {
-  background-image: url("../../Images/Home Page/banner-cms-08.png");
+  background-image: url("../Images/Home Page/banner-cms-08.png");
   width: 100%;
 }
 .banners-container .banners1 .banner4 .content {
@@ -1399,7 +1400,7 @@ header .titls a i {
 }
 
 .pattern-3 {
-  background-image: url("../../Images/Home Page/video.png");
+  background-image: url("../Images/Home Page/video.png");
   height: 594.688px;
   display: flex;
   justify-content: center;
